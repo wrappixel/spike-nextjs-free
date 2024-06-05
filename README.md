@@ -13,8 +13,8 @@ Spike NextJS Admin Dashboard
 <table>
 <thead>
 <tr>
-<th>Monster Free Next Js Admin Version</th>
-<th>Monster Next Js Dashboard Template Version</th>
+<th>Spike NextJS Free Version</th>
+<th>Spike NextJS Pro Version</th>
 </tr>
 </thead>
 <tbody>
@@ -52,10 +52,10 @@ Spike NextJS Admin Dashboard
 </tr>
 <tr>
   <td>
-  Latest Reactstrap
+  Material Ui
   </td>
   <td>
-  Latest Reactstrap
+  Material Ui
   </td>
 </tr>
 <tr>
@@ -140,135 +140,8 @@ Spike NextJS Admin Dashboard
 </tr>
 </tbody>
 </table>
-<thead>
-<tr>
-<th>Spike NextJS Free Version</th>
-<th>Spike NextJS Pro Version</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td>
-    <a href="https://spike-nextjs-free.netlify.app/">Live Preview</a>
-  </td>
-  <td>
-  <a href="https://spike-nextjs-pro-main.vercel.app/">Live Preview</a>
-  </td>
-</tr>
-<tr>
-  <td>
-    <a href="https://www.wrappixel.com/templates/spike-next-js-free-admin-template/">Download Now</a>
-  </td>
-  <td>
-    <a href="https://www.wrappixel.com/templates/spike-nextjs-admin-template/?ref=33">Purchase Now</a>
-  </td>
-</tr>
-<tr>
-  <td>
-  1 Basic Dashboard
-  </td>
-  <td>
-  2+ Stunning Dashboards
-  </td>
-</tr>
-<tr>
-  <td>
-  Material Ui
-  </td>
-  <td>
-  Material Ui
-  </td>
-</tr>
-<tr>
-  <td>
-  Fully Responsive Pages
-  </td>
-  <td>
-  Fully Responsive Pages
-  </td>
-</tr>
-<tr>
-  <td>
-  10+ Pages Template
-  </td>
-  <td>
-  690+ Page Templates
-  </td>
-</tr>
-<tr>
-  <td>
-  5+ UI Components
-  </td>
-  <td>
-  100+ UI Components
-  </td>
-</tr>
-<tr>
-  <td>
-  No Documentation
-  </td>
-  <td>
-  Documentation Provided
-  </td>
-</tr>
-<tr>
-  <td>
-  Easy To Customize
-  </td>
-  <td>
-  Easy To Customize
-  </td>
-</tr>
-<tr>
-  <td>
-  -
-  </td>
-  <td>
-  Right-to-Left(RTL) Verion
-  </td>
-</tr>
-  <tr>
-  <td>
-  -
-  </td>
-  <td>
-  Dashboard Figma Files
-  </td>
-</tr>
-<tr>
-  <td>
-  -
-  </td>
-  <td>
-  5+ Unique Demos
-  </td>
-</tr>
-<tr>
-  <td>
-  -
-  </td>
-  <td>
-  50+ Integrated Plugins
-  </td>
-</tr>
-<tr>
-  <td>
-  -
-  </td>
-  <td>
-  10+ Ready to Use App
-  </td>
-</tr>
-<tr>
-  <td>
-  -
-  </td>
-  <td>
-  1 Year Premium Support
-  </td>
-</tr>
-</tbody>
-</table>
+
+
 
 # Upgrade to Premium version
 
