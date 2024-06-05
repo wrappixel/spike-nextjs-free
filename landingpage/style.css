@@ -165,3 +165,9 @@
     margin: 0 auto;
     top: 5px;
 }
+
+.live-box {
+    position: relative;
+    height: 275px;
+    overflow: hidden;
+}
