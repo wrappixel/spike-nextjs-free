@@ -46,7 +46,7 @@ jobs:
       run: |
         git config --global user.name 'github-actions[bot]'
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-        BRANCH_NAME="update-$(date +%Y%m%d%H%M%S)"
+        echo "BRANCH_NAME=update-$(date +%Y%m%d%H%M%S)" >> $GITHUB_ENV
         git checkout -b $BRANCH_NAME
         git push origin $BRANCH_NAME
 
