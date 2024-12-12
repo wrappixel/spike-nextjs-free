@@ -1,0 +1,15 @@
+# Ignore environment variable files
+.env
+secrets.env
+
+# Ignore configuration files
+config/*.json
+
+# Ignore node_modules
+node_modules/
+
+# Ignore log files
+*.log
+
+# Ignore Docker files
+docker-compose.override.yml
