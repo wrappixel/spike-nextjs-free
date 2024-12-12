@@ -33,6 +33,14 @@ jobs:
     - name: Run Docker container
       run: docker run my-app
 
+    - name: Create .gitignore for secrets
+      run: |
+        echo "secrets.env" >> .gitignore
+        echo ".env" >> .gitignore
+        echo "config/*.json" >> .gitignore
+        git add .gitignore
+        git commit -m "Add .gitignore for secrets"
+
     - name: Create new branch
       if: success()
       run: |
