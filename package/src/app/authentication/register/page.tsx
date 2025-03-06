@@ -1,5 +1,5 @@
 "use client";
-import { Grid, Box, Card, Typography, Stack } from "@mui/material";
+import { Grid2 as Grid, Box, Card, Typography, Stack } from "@mui/material";
 import Link from "next/link";
 import PageContainer from "@/app/(DashboardLayout)/components/container/PageContainer";
 import Logo from "@/app/(DashboardLayout)/layout/shared/logo/Logo";
@@ -25,60 +25,71 @@ const Register2 = () => (
       <Grid
         container
         spacing={0}
-        justifyContent="center"
-        sx={{ height: "100vh" }}
-      >
+        sx={{
+          justifyContent: "center",
+          height: "100vh"
+        }}>
         <Grid
-          item
-          xs={12}
-          sm={12}
-          lg={4}
-          xl={3}
-          display="flex"
-          justifyContent="center"
-          alignItems="center"
-        >
+          size={{
+            xs: 12,
+            sm: 12,
+            lg: 4,
+            xl: 3
+          }}
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center"
+          }}>
           <Card
             elevation={9}
             sx={{ p: 4, zIndex: 1, width: "100%", maxWidth: "500px" }}
           >
-            <Box display="flex" alignItems="center" justifyContent="center">
+            <Box
+              sx={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center"
+              }}>
               <Logo />
             </Box>
             <AuthRegister
               subtext={
                 <Typography
                   variant="subtitle1"
-                  textAlign="center"
                   color="textSecondary"
-                  mb={1}
-                >
+                  sx={{
+                    textAlign: "center",
+                    mb: 1
+                  }}>
                   Your Social Campaigns
                 </Typography>
               }
               subtitle={
                 <Stack
                   direction="row"
-                  justifyContent="center"
                   spacing={1}
-                  mt={3}
-                >
+                  sx={{
+                    justifyContent: "center",
+                    mt: 3
+                  }}>
                   <Typography
                     color="textSecondary"
                     variant="h6"
-                    fontWeight="400"
+                    sx={{
+                      fontWeight: "400"
+                    }}
                   >
                     Already have an Account?
                   </Typography>
                   <Typography
                     component={Link}
                     href="/authentication/login"
-                    fontWeight="500"
                     sx={{
+                      fontWeight: "500",
                       textDecoration: "none",
-                      color: "primary.main",
-                    }}
-                  >
+                      color: "primary.main"
+                    }}>
                     Sign In
                   </Typography>
                 </Stack>

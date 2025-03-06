@@ -54,7 +54,7 @@ const products = [
 
 const TopPayingClients = () => {
   return (
-    <DashboardCard title="Top Paying Clients">
+    (<DashboardCard title="Top Paying Clients">
       <Box sx={{ overflow: "auto" }}>
         <Box sx={{ width: "100%", display: "table", tableLayout: "fixed" }}>
           <Table
@@ -65,27 +65,37 @@ const TopPayingClients = () => {
             <TableHead>
               <TableRow>
                 <TableCell>
-                  <Typography variant="subtitle2" fontWeight={600}>
+                  <Typography variant="subtitle2" sx={{
+                    fontWeight: 600
+                  }}>
                     Id
                   </Typography>
                 </TableCell>
                 <TableCell>
-                  <Typography variant="subtitle2" fontWeight={600}>
+                  <Typography variant="subtitle2" sx={{
+                    fontWeight: 600
+                  }}>
                     Assigned
                   </Typography>
                 </TableCell>
                 <TableCell>
-                  <Typography variant="subtitle2" fontWeight={600}>
+                  <Typography variant="subtitle2" sx={{
+                    fontWeight: 600
+                  }}>
                     Name
                   </Typography>
                 </TableCell>
                 <TableCell>
-                  <Typography variant="subtitle2" fontWeight={600}>
+                  <Typography variant="subtitle2" sx={{
+                    fontWeight: 600
+                  }}>
                     Priority
                   </Typography>
                 </TableCell>
                 <TableCell align="right">
-                  <Typography variant="subtitle2" fontWeight={600}>
+                  <Typography variant="subtitle2" sx={{
+                    fontWeight: 600
+                  }}>
                     Budget
                   </Typography>
                 </TableCell>
@@ -112,7 +122,9 @@ const TopPayingClients = () => {
                       }}
                     >
                       <Box>
-                        <Typography variant="subtitle2" fontWeight={600}>
+                        <Typography variant="subtitle2" sx={{
+                          fontWeight: 600
+                        }}>
                           {product.name}
                         </Typography>
                         <Typography
@@ -130,7 +142,9 @@ const TopPayingClients = () => {
                     <Typography
                       color="textSecondary"
                       variant="subtitle2"
-                      fontWeight={400}
+                      sx={{
+                        fontWeight: 400
+                      }}
                     >
                       {product.pname}
                     </Typography>
@@ -155,7 +169,7 @@ const TopPayingClients = () => {
           </Table>
         </Box>
       </Box>
-    </DashboardCard>
+    </DashboardCard>)
   );
 };
 

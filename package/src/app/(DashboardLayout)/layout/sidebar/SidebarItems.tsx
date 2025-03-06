@@ -1,37 +1,108 @@
 import React from "react";
-import Menuitems from "./MenuItems";
 import { usePathname } from "next/navigation";
-import { Box, List } from "@mui/material";
-import NavItem from "./NavItem";
-import NavGroup from "./NavGroup/NavGroup";
+import { Box } from "@mui/material";
+import {
+    Logo,
+    Sidebar as MUI_Sidebar,
+    Menu,
+    MenuItem,
+    Submenu,
+} from "react-mui-sidebar";
 
-const SidebarItems = ({ toggleMobileSidebar }: any) => {
-  const pathname = usePathname();
-  const pathDirect = pathname;
+import Menuitems from "./MenuItems";
+import { Icon } from "@iconify/react";
+import Link from "next/link";
+import { Upgrade } from "./Updrade";
+import theme from "@/utils/theme";
 
-  return (
-    <Box sx={{ px: "20px" }}>
-      <List sx={{ pt: 0 }} className="sidebarNav" component="div">
-        {Menuitems.map((item) => {
-          // {/********SubHeader**********/}
-          if (item.subheader) {
-            return <NavGroup item={item} key={item.subheader} />;
+const renderMenuItems = (items: any[], pathDirect: string) => {
 
-            // {/********If Sub Menu**********/}
-            /* eslint no-else-return: "off" */
-          } else {
+
+    const primary = theme.palette.primary.light;
+    return items.map((item) => {
+        if (item.subheader) {
+            // Display Subheader
             return (
-              <NavItem
-                item={item}
-                key={item.id}
-                pathDirect={pathDirect}
-                onClick={toggleMobileSidebar}
-              />
+                <Box sx={{ margin: "0 -24px" }} key={item.subheader}>
+                    <Menu
+                        subHeading={item.subheader}
+                        key={item.subheader}
+
+                    ><></></Menu>
+                </Box>
             );
-          }
-        })}
-      </List>
-    </Box>
-  );
+        }
+
+        //If the item has children (submenu)
+        if (item.children) {
+            return (
+                <Submenu
+                    key={item.id}
+                    title={item.title}
+                    icon={
+                        item.icon ? (
+                            <Icon icon={"solar:" + item.icon} width="24" height="24" />
+                        ) : (
+                            <Icon icon="mdi:circle" width="6" height="6" />
+                        )
+                    }
+                >
+                    {renderMenuItems(item.children, pathDirect)}
+                </Submenu>
+            );
+        }
+
+        // If the item has no children, render a MenuItem
+
+        return (
+            <MenuItem
+                key={item.id}
+                isSelected={pathDirect === item?.href}
+                icon={
+                    item.icon ? (
+                        <Icon icon={"solar:" + item.icon} width="24" height="24" />
+                    ) : (
+                        <Icon icon="mdi:circle" width="6" height="6" />
+                    )
+                }
+                component={Link}
+                link={item.href && item.href !== "" ? item.href : undefined}
+                target={item.href && item.href.startsWith("https") ? "_blank" : "_self"}
+                badge={item.chip ? true : false}
+                badgeContent={item.chip || ""}
+                badgeColor='secondary'
+                badgeTextColor="#0085db"
+                disabled={item.disabled}
+            >
+                {item.title}
+            </MenuItem>
+
+
+        );
+    });
 };
+
+const SidebarItems = () => {
+    const pathname = usePathname();
+    const pathDirect = pathname;
+
+    return (
+        <Box sx={{ px: "20px" }}>
+
+            <MUI_Sidebar width={"100%"} showProfile={false} themeColor={"#0085db"} themeSecondaryColor={'#0085db1a'}>
+
+                <Box sx={{ margin: "0 -24px" }}>
+                    <Logo img="/images/logos/logo-dark.svg" component={Link} href="/" >Spike</Logo>
+                </Box>
+
+                {renderMenuItems(Menuitems, pathDirect)}
+
+            </MUI_Sidebar>
+            <Upgrade />
+
+        </Box>
+    );
+};
+
 export default SidebarItems;
+

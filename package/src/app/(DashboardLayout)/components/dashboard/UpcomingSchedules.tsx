@@ -13,7 +13,7 @@ import { Link, Typography } from "@mui/material";
 
 const UpcomingSchedules = () => {
   return (
-    <DashboardCard title="Upcoming Schedules">
+    (<DashboardCard title="Upcoming Schedules">
       <>
         <Timeline
           className="theme-timeline"
@@ -50,7 +50,9 @@ const UpcomingSchedules = () => {
               <TimelineConnector />
             </TimelineSeparator>
             <TimelineContent>
-              <Typography fontWeight="600">New sale recorded</Typography>{" "}
+              <Typography sx={{
+                fontWeight: "600"
+              }}>New sale recorded</Typography>{" "}
               <Link href="/" underline="none">
                 #ML-3467
               </Link>
@@ -73,7 +75,9 @@ const UpcomingSchedules = () => {
               <TimelineConnector />
             </TimelineSeparator>
             <TimelineContent>
-              <Typography fontWeight="600">New sale recorded</Typography>{" "}
+              <Typography sx={{
+                fontWeight: "600"
+              }}>New sale recorded</Typography>{" "}
               <Link href="/" underline="none">
                 #ML-3467
               </Link>
@@ -86,7 +90,9 @@ const UpcomingSchedules = () => {
               <TimelineConnector />
             </TimelineSeparator>
             <TimelineContent>
-              <Typography fontWeight="600">New arrival recorded</Typography>
+              <Typography sx={{
+                fontWeight: "600"
+              }}>New arrival recorded</Typography>
             </TimelineContent>
           </TimelineItem>
           <TimelineItem>
@@ -98,7 +104,7 @@ const UpcomingSchedules = () => {
           </TimelineItem>
         </Timeline>
       </>
-    </DashboardCard>
+    </DashboardCard>)
   );
 };
 

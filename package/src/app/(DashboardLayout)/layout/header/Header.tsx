@@ -1,100 +1,99 @@
-import React from "react";
-import {
-  Box,
-  AppBar,
-  Toolbar,
-  styled,
-  Stack,
-  IconButton,
-  Badge,
-  Button,
-} from "@mui/material";
-import PropTypes from "prop-types";
+import { IconButton, Box, AppBar, useMediaQuery, Toolbar, styled, Stack, Button, Badge } from '@mui/material';
+import Profile from './Profile';
+import { useEffect, useState, useContext } from 'react';
+import { Icon } from '@iconify/react';
+import { DashboardContext } from '@/app/context/DashboardContext';
+import { IconBellRinging } from "@tabler/icons-react";
 
-// components
-import Profile from "./Profile";
-import { IconBellRinging, IconMenu } from "@tabler/icons-react";
 
-interface ItemType {
-  toggleMobileSidebar: (event: React.MouseEvent<HTMLElement>) => void;
-}
+const Header = () => {
+  const [_height, setHeight] = useState('0px');
 
-const Header = ({ toggleMobileSidebar }: ItemType) => {
-  // const lgUp = useMediaQuery((theme) => theme.breakpoints.up('lg'));
-  // const lgDown = useMediaQuery((theme) => theme.breakpoints.down('lg'));
+
+
+
+
 
   const AppBarStyled = styled(AppBar)(({ theme }) => ({
-    boxShadow: "none",
+    boxShadow: 'none',
     background: theme.palette.background.paper,
-    justifyContent: "center",
-    backdropFilter: "blur(4px)",
-    borderRadius: 13,
-    [theme.breakpoints.up("lg")]: {
-      minHeight: "70px",
+    justifyContent: 'center',
+    backdropFilter: 'blur(4px)',
+    [theme.breakpoints.up('lg')]: {
+      minHeight: '70px',
     },
+    zIndex: 'unset'
   }));
   const ToolbarStyled = styled(Toolbar)(({ theme }) => ({
-    width: "100%",
+    width: '100%',
     color: theme.palette.text.secondary,
   }));
 
-  return (
-    <AppBarStyled position="sticky" color="default">
-      <ToolbarStyled>
-        <IconButton
-          color="inherit"
-          aria-label="menu"
-          onClick={toggleMobileSidebar}
-          sx={{
-            display: {
-              lg: "none",
-              xs: "inline",
-            },
-          }}
-        >
-          <IconMenu width="20" height="20" />
-        </IconButton>
 
-        <IconButton
-          size="large"
-          aria-label="show 11 new notifications"
-          color="inherit"
-          aria-controls="msgs-menu"
-          aria-haspopup="true"
-        >
-          <Badge variant="dot" color="primary">
-            <IconBellRinging size="21" stroke="1.5" />
-          </Badge>
-        </IconButton>
-        <Box flexGrow={1} />
-        <Stack spacing={1} direction="row" alignItems="center">
-          <Box
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 992) {
+        setHeight('0px');
+      }
+    };
+    window.addEventListener('resize', handleResize);
+
+    // Cleanup function to remove event listener on unmount
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  const { isMobileSidebar, setIsMobileSidebar } = useContext(DashboardContext);
+
+
+
+  return (
+    <>
+      <AppBarStyled position="sticky" color="default">
+        <ToolbarStyled>
+          <IconButton
+            color="inherit"
+            aria-label="menu"
+            onClick={() => setIsMobileSidebar(!isMobileSidebar)}
+
             sx={{
               display: {
-                xs: "none",
-                sm: "block",
+                lg: "none",
+                xs: "inline",
               },
             }}
           >
-            <Button
-              variant="contained"
-              disableElevation
-              color="primary"
-              target="_blank"
-              href="https://www.wrappixel.com/templates/spike-nextjs-admin-template/"
-            >
-              Upgrade to Pro
-            </Button>
-          </Box>
-          <Profile />
-        </Stack>
-      </ToolbarStyled>
-    </AppBarStyled>
-  );
-};
+            <Icon icon="solar:list-bold" height={20} />
+          </IconButton>
 
-Header.propTypes = {
-  sx: PropTypes.object,
+          <IconButton
+            size="large"
+            aria-label="show 11 new notifications"
+
+            aria-controls="msgs-menu"
+            aria-haspopup="true"
+          >
+            <Badge variant="dot" color="primary">
+              <IconBellRinging size="21" stroke="1.5" />
+            </Badge>
+          </IconButton>
+
+          <Box flexGrow={1} />
+
+
+          <>
+            <Stack spacing={2} direction="row" alignItems="center">
+              <Button variant="contained" color="primary" target="_blank" href="https://www.wrappixel.com/templates/spike-nextjs-admin-template/?ref=376">
+                Check Pro Template
+              </Button>
+              <Profile />
+            </Stack>
+          </>
+
+
+        </ToolbarStyled>
+      </AppBarStyled>
+    </>
+  );
 };
 
 export default Header;

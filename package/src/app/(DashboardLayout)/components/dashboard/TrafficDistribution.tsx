@@ -1,7 +1,7 @@
 import dynamic from "next/dynamic";
 const Chart = dynamic(() => import("react-apexcharts"), { ssr: false });
 import { useTheme } from "@mui/material/styles";
-import { Grid, Stack, Typography, Avatar } from "@mui/material";
+import { Grid2 as Grid, Stack, Typography, Avatar } from "@mui/material";
 import { IconArrowUpLeft } from "@tabler/icons-react";
 
 import DashboardCard from "@/app/(DashboardLayout)/components/shared/DashboardCard";
@@ -63,24 +63,33 @@ const TrafficDistribution = () => {
   const seriescolumnchart: any = [5368, 3500, 4106];
 
   return (
-    <DashboardCard title="Traffic Distribution">
+    (<DashboardCard title="Traffic Distribution">
       <Grid container spacing={3}>
         {/* column */}
-        <Grid item xs={6} sm={7}>
-          <Typography variant="h3" fontWeight="700">
+        <Grid
+          size={{
+            xs: 6,
+            sm: 7
+          }}>
+          <Typography variant="h3" sx={{
+            fontWeight: "700"
+          }}>
             $36,358
           </Typography>
           <Stack
             direction={{ xs: "column", sm: "row" }}
             spacing={1}
-            mt={1}
-            alignItems="center"
-          >
+            sx={{
+              mt: 1,
+              alignItems: "center"
+            }}>
             <Stack direction="row">
               <Avatar sx={{ bgcolor: successlight, width: 21, height: 21 }}>
                 <IconArrowUpLeft width={18} color="#39B69A" />
               </Avatar>
-              <Typography variant="subtitle2" fontWeight="600">
+              <Typography variant="subtitle2" sx={{
+                fontWeight: "600"
+              }}>
                 +9%
               </Typography>
             </Stack>
@@ -88,8 +97,12 @@ const TrafficDistribution = () => {
               last year
             </Typography>
           </Stack>
-          <Stack spacing={3} mt={3} direction="row">
-            <Stack direction="row" spacing={1} alignItems="center">
+          <Stack spacing={3} direction="row" sx={{
+            mt: 3
+          }}>
+            <Stack direction="row" spacing={1} sx={{
+              alignItems: "center"
+            }}>
               <Avatar
                 sx={{
                   width: 9,
@@ -100,13 +113,17 @@ const TrafficDistribution = () => {
               ></Avatar>
               <Typography
                 variant="subtitle2"
-                fontSize="12px"
                 color="textSecondary"
+                sx={{
+                  fontSize: "12px"
+                }}
               >
                 Oragnic
               </Typography>
             </Stack>
-            <Stack direction="row" spacing={1} alignItems="center">
+            <Stack direction="row" spacing={1} sx={{
+              alignItems: "center"
+            }}>
               <Avatar
                 sx={{
                   width: 9,
@@ -117,8 +134,10 @@ const TrafficDistribution = () => {
               ></Avatar>
               <Typography
                 variant="subtitle2"
-                fontSize="12px"
                 color="textSecondary"
+                sx={{
+                  fontSize: "12px"
+                }}
               >
                 Refferal
               </Typography>
@@ -126,7 +145,11 @@ const TrafficDistribution = () => {
           </Stack>
         </Grid>
         {/* column */}
-        <Grid item xs={6} sm={5}>
+        <Grid
+          size={{
+            xs: 6,
+            sm: 5
+          }}>
           <Chart
             options={optionscolumnchart}
             series={seriescolumnchart}
@@ -136,7 +159,7 @@ const TrafficDistribution = () => {
           />
         </Grid>
       </Grid>
-    </DashboardCard>
+    </DashboardCard>)
   );
 };
 

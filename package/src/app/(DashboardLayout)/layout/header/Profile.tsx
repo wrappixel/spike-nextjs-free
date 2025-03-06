@@ -23,7 +23,7 @@ const Profile = () => {
   };
 
   return (
-    <Box>
+    (<Box>
       <IconButton
         size="large"
         aria-label="show 11 new notifications"
@@ -81,7 +81,12 @@ const Profile = () => {
           </ListItemIcon>
           <ListItemText>My Tasks</ListItemText>
         </MenuItem>
-        <Box mt={1} py={1} px={2}>
+        <Box
+          sx={{
+            mt: 1,
+            py: 1,
+            px: 2
+          }}>
           <Button
             href="/authentication/login"
             variant="outlined"
@@ -93,7 +98,7 @@ const Profile = () => {
           </Button>
         </Box>
       </Menu>
-    </Box>
+    </Box>)
   );
 };
 

@@ -53,7 +53,7 @@ const ProductSales = () => {
   ];
 
   return (
-    <DashboardCard
+    (<DashboardCard
       title="Product Sales"
       action={
         <Fab color="error" size="medium" sx={{color: '#ffffff'}}>
@@ -65,14 +65,27 @@ const ProductSales = () => {
       }
     >
       <>
-        <Typography variant="h3" fontWeight="700" mt="-20px">
+        <Typography
+          variant="h3"
+          sx={{
+            fontWeight: "700",
+            mt: "-20px"
+          }}>
           $6,820
         </Typography>
-        <Stack direction="row" spacing={1} my={1} alignItems="center">
+        <Stack
+          direction="row"
+          spacing={1}
+          sx={{
+            my: 1,
+            alignItems: "center"
+          }}>
           <Avatar sx={{ bgcolor: errorlight, width: 21, height: 21 }}>
             <IconArrowDownRight width={18} color="#FA896B" />
           </Avatar>
-          <Typography variant="subtitle2" fontWeight="600">
+          <Typography variant="subtitle2" sx={{
+            fontWeight: "600"
+          }}>
             +9%
           </Typography>
           <Typography variant="subtitle2" color="textSecondary">
@@ -80,7 +93,7 @@ const ProductSales = () => {
           </Typography>
         </Stack>
       </>
-    </DashboardCard>
+    </DashboardCard>)
   );
 };
 
