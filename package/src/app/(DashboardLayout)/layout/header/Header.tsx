@@ -1,10 +1,10 @@
-import { IconButton, Box, AppBar, useMediaQuery, Toolbar, styled, Stack, Button, Badge } from '@mui/material';
+import { IconButton, Box, AppBar, Menu, MenuItem, Typography, useMediaQuery, Toolbar, styled, Stack, Button, Badge } from '@mui/material';
 import Profile from './Profile';
 import { useEffect, useState, useContext } from 'react';
 import { Icon } from '@iconify/react';
 import { DashboardContext } from '@/app/context/DashboardContext';
 import { IconBellRinging } from "@tabler/icons-react";
-
+import Notification from './Notification'
 
 const Header = () => {
   const [_height, setHeight] = useState('0px');
@@ -43,7 +43,15 @@ const Header = () => {
   }, []);
 
   const { isMobileSidebar, setIsMobileSidebar } = useContext(DashboardContext);
+  const [anchorEl, setAnchorEl] = useState(null);
 
+  const handleClick = (event: any) => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
 
 
   return (
@@ -65,21 +73,10 @@ const Header = () => {
             <Icon icon="solar:list-bold" height={20} />
           </IconButton>
 
-          <IconButton
-            size="large"
-            aria-label="show 11 new notifications"
+          <Notification />
 
-            aria-controls="msgs-menu"
-            aria-haspopup="true"
-          >
-            <Badge variant="dot" color="primary">
-              <IconBellRinging size="21" stroke="1.5" />
-            </Badge>
-          </IconButton>
 
           <Box flexGrow={1} />
-
-
           <>
             <Stack spacing={2} direction="row" alignItems="center">
               <Button variant="contained" color="primary" target="_blank" href="https://www.wrappixel.com/templates/spike-nextjs-admin-template/?ref=376">
