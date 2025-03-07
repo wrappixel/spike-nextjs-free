@@ -56,7 +56,7 @@ const ProductSales = () => {
     (<DashboardCard
       title="Product Sales"
       action={
-        <Fab color="error" size="medium" sx={{color: '#ffffff'}}>
+        <Fab color="error" size="medium" sx={{color: '#ffffff', boxShadow: 'none'}}>
           <IconCurrencyDollar width={24} />
         </Fab>
       }

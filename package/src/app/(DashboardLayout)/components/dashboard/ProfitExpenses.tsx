@@ -37,7 +37,7 @@ const ProfitExpenses = () => {
       toolbar: {
         show: true,
       },
-      height: 370,
+      height: 350,
     },
     colors: [primary, secondary],
     plotOptions: {
@@ -45,9 +45,7 @@ const ProfitExpenses = () => {
         horizontal: false,
         barHeight: "60%",
         columnWidth: "42%",
-        borderRadius: [6],
-        borderRadiusApplication: "end",
-        borderRadiusWhenStacked: "all",
+        borderRadius: 6,
       },
     },
 
@@ -140,7 +138,7 @@ const ProfitExpenses = () => {
           series={seriescolumnchart}
           type="bar"
           width={"100%"}
-          height="370px"
+          height="350px"
         />
       </Box>
     </DashboardCard>

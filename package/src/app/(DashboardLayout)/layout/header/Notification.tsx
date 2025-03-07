@@ -1,5 +1,3 @@
-
-
 import React, { useState } from 'react';
 import { IconButton, Badge, Menu, MenuItem, Typography } from '@mui/material';
 import { IconBell } from "@tabler/icons-react";
@@ -35,21 +33,12 @@ export default function Notification() {
                 anchorEl={anchorEl}
                 open={Boolean(anchorEl)}
                 onClose={handleClose}
-                anchorOrigin={{
-                    vertical: 'top',
-                    horizontal: 'right',
-                }}
-                transformOrigin={{
-                    vertical: 'top',
-                    horizontal: 'left',
-                }}
             >
-
                 <MenuItem onClick={handleClose}>
-                    <Typography variant="body2">Item 1</Typography>
+                    <Typography variant="subtitle1">Item 1</Typography>
                 </MenuItem>
                 <MenuItem onClick={handleClose}>
-                    <Typography variant="body2">Item 2</Typography>
+                    <Typography variant="subtitle1">Item 2</Typography>
                 </MenuItem>
             </Menu>
         </>

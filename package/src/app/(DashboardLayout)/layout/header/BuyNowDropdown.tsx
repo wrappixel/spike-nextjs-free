@@ -90,12 +90,11 @@ const StyledButton = styled(Button)(({ theme }) => ({
 
 const MenuItems: MenuItemType[] = [
     { id: 1, title: 'Bootstrap Preview', href: 'https://www.wrappixel.com/templates/spike-bootstrap-admin-dashboard/?ref=376' },
-    { id: 2, title: 'Angular Preview', href: 'https://spike-angular-pro-main.netlify.app/dashboards/dashboard1/?ref=376' },
-    { id: 3, title: 'VueJs Preview', href: 'https://spike-vue-main.netlify.app/dashboard1/?ref=376' },
-    { id: 4, title: 'NextJs Preview', href: 'https://spike-nextjs-pro-main.vercel.app/?ref=376' },
-    { id: 5, title: 'NuxtJs Preview', href: 'https://spike-nuxtjs-pro-main.netlify.app/dashboards/dashboard1/?ref=376' },
-    { id: 6, title: 'Tailwind Preview', href: ' https://www.wrappixel.com/templates/spike-tailwind-admin-template/?ref=376' },
-
+    { id: 2, title: 'Angular Preview', href: 'https://www.wrappixel.com/templates/spike-angular-admin-template/?ref=376' },
+    { id: 3, title: 'VueJs Preview', href: 'https://www.wrappixel.com/templates/spike-vuejs-admin-dashboard/?ref=376' },
+    { id: 4, title: 'NextJs Preview', href: 'https://www.wrappixel.com/templates/spike-nextjs-admin-template/?ref=376' },
+    { id: 5, title: 'NuxtJs Preview', href: 'https://www.wrappixel.com/templates/spike-nuxtjs-admin-template/?ref=376' },
+    { id: 6, title: 'Tailwind Preview', href: 'https://www.wrappixel.com/templates/spike-tailwind-admin-template/?ref=376' },
 ];
 
 const BuyNowDropdown: React.FC = () => {

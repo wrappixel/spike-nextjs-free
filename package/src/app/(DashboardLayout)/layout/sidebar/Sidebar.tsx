@@ -56,7 +56,7 @@ const Sidebar = (
         sx: {
           width: sidebarWidth,
           boxShadow: '0 9px 17.5px rgb(0, 0, 0, 0.05)!important',
-
+overflowX: 'hidden'
         },
       }}
     >
@@ -64,7 +64,7 @@ const Sidebar = (
       {/* ------------------------------------------- */}
       {/* Sidebar For Mobile */}
       {/* ------------------------------------------- */}
-      <Scrollbar sx={{ height: "calc(100% - 73px)" }}>
+      <Scrollbar sx={{ height: "calc(100% - 73px)", overflowX: 'hidden' }}>
         <SidebarItems />
       </Scrollbar>
 

@@ -63,7 +63,7 @@ export default function RootLayout({
             sx={{
               paddingTop: "20px",
               maxWidth: "1200px",
-
+              minHeight: 'calc(100vh - 229px)'
             }}
           >
 
@@ -71,11 +71,12 @@ export default function RootLayout({
             {/* ------------------------------------------- */}
             {/* Page Route */}
             {/* ------------------------------------------- */}
-            <Box sx={{ minHeight: "calc(100vh - 290vh)" }}>{children}</Box>
+            <Box>{children}</Box>
 
-            <Footer />
+
 
           </Container>
+          <Footer />
         </Box>
       </PageWrapper>
     </MainWrapper>

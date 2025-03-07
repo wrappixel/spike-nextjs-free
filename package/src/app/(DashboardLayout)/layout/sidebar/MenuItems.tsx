@@ -33,13 +33,13 @@ const Menuitems: MenuitemsType[] = [
         icon: "chart-line-duotone",
         href: "https://spike-nextjs-pro-main.vercel.app/dashboards/dashboard2",
 
-        chip: "pro",
+        chip: "Pro",
     },
     {
         id: uniqueId(),
         title: "Frontend Pages",
         icon: "feed-line-duotone",
-        chip: "pro",
+        chip: "Pro",
         href: "https://spike-nextjs-pro-main.vercel.app/frontend-pages/homepage",
 
         children: [
@@ -47,43 +47,43 @@ const Menuitems: MenuitemsType[] = [
                 id: uniqueId(),
                 title: "Homepage",
                 href: "https://spike-nextjs-pro-main.vercel.app/frontend-pages/homepage",
-                chip: "pro",
+                chip: "Pro",
             },
             {
                 id: uniqueId(),
                 title: "About Us",
                 href: "https://spike-nextjs-pro-main.vercel.app/frontend-pages/about",
-                chip: "pro",
+                chip: "Pro",
             },
             {
                 id: uniqueId(),
                 title: "Blog",
                 href: "https://spike-nextjs-pro-main.vercel.app/frontend-pages/blog",
-                chip: "pro",
+                chip: "Pro",
             },
             {
                 id: uniqueId(),
                 title: "Blog Details",
                 href: "https://spike-nextjs-pro-main.vercel.app/frontend-pages/blog-detail",
-                chip: "pro",
+                chip: "Pro",
             },
             {
                 id: uniqueId(),
                 title: "Contact",
                 href: "https://spike-nextjs-pro-main.vercel.app/frontend-pages/contact",
-                chip: "pro",
+                chip: "Pro",
             },
             {
                 id: uniqueId(),
                 title: "Portfolio",
                 href: "https://spike-nextjs-pro-main.vercel.app/frontend-pages/portfolio",
-                chip: "pro",
+                chip: "Pro",
             },
             {
                 id: uniqueId(),
                 title: "Pricing",
                 href: "https://spike-nextjs-pro-main.vercel.app/frontend-pages/pricing",
-                chip: "pro",
+                chip: "Pro",
             },
         ],
     },
@@ -139,7 +139,7 @@ const Menuitems: MenuitemsType[] = [
         id: uniqueId(),
         title: "Contacts",
         icon: "phone-line-duotone",
-        chip: "pro",
+        chip: "Pro",
 
         href: "https://spike-nextjs-pro-main.vercel.app/apps/contacts",
     },
@@ -150,7 +150,7 @@ const Menuitems: MenuitemsType[] = [
         icon: "chat-round-unread-line-duotone",
 
         href: "https://spike-nextjs-pro-main.vercel.app/apps/chats",
-        chip: "pro",
+        chip: "Pro",
     },
     {
         id: uniqueId(),
@@ -158,7 +158,7 @@ const Menuitems: MenuitemsType[] = [
         icon: "notification-unread-line-duotone",
 
         href: "https://spike-nextjs-pro-main.vercel.app/apps/notes",
-        chip: "pro",
+        chip: "Pro",
     },
     {
         id: uniqueId(),
@@ -166,7 +166,7 @@ const Menuitems: MenuitemsType[] = [
         icon: "calendar-line-duotone",
 
         href: "https://spike-nextjs-pro-main.vercel.app/apps/calendar",
-        chip: "pro",
+        chip: "Pro",
     },
     {
         id: uniqueId(),
@@ -174,7 +174,7 @@ const Menuitems: MenuitemsType[] = [
         icon: "mailbox-line-duotone",
 
         href: "https://spike-nextjs-pro-main.vercel.app/apps/email",
-        chip: "pro",
+        chip: "Pro",
     },
     {
         id: uniqueId(),
@@ -182,7 +182,7 @@ const Menuitems: MenuitemsType[] = [
         icon: "ticket-sale-line-duotone",
 
         href: "https://spike-nextjs-pro-main.vercel.app/apps/tickets",
-        chip: "pro",
+        chip: "Pro",
     },
     {
         id: uniqueId(),
@@ -190,7 +190,7 @@ const Menuitems: MenuitemsType[] = [
         icon: "notes-line-duotone",
 
         href: "https://spike-nextjs-pro-main.vercel.app/apps/kanban",
-        chip: "pro",
+        chip: "Pro",
     },
     {
         id: uniqueId(),
@@ -198,31 +198,31 @@ const Menuitems: MenuitemsType[] = [
         icon: "user-rounded-line-duotone",
         href: "https://spike-nextjs-pro-main.vercel.app/apps/user-profile/profile",
 
-        chip: "pro",
+        chip: "Pro",
         children: [
             {
                 id: uniqueId(),
                 title: "Profile",
                 href: "https://spike-nextjs-pro-main.vercel.app/apps/user-profile/profile",
-                chip: "pro",
+                chip: "Pro",
             },
             {
                 id: uniqueId(),
                 title: "Followers",
                 href: "https://spike-nextjs-pro-main.vercel.app/apps/user-profile/followers",
-                chip: "pro",
+                chip: "Pro",
             },
             {
                 id: uniqueId(),
                 title: "Friends",
                 href: "https://spike-nextjs-pro-main.vercel.app/apps/user-profile/friends",
-                chip: "pro",
+                chip: "Pro",
             },
             {
                 id: uniqueId(),
                 title: "Gallery",
                 href: "https://spike-nextjs-pro-main.vercel.app/apps/user-profile/gallery",
-                chip: "pro",
+                chip: "Pro",
             },
         ],
     },
@@ -232,31 +232,31 @@ const Menuitems: MenuitemsType[] = [
         icon: "user-speak-line-duotone",
 
         href: "https://spike-nextjs-pro-main.vercel.app/apps/user-profile2/profile",
-        chip: "pro",
+        chip: "Pro",
         children: [
             {
                 id: uniqueId(),
                 title: "Profile",
                 href: "https://spike-nextjs-pro-main.vercel.app/apps/user-profile2/profile",
-                chip: "pro",
+                chip: "Pro",
             },
             {
                 id: uniqueId(),
                 title: "Teams",
                 href: "https://spike-nextjs-pro-main.vercel.app/apps/user-profile2/teams",
-                chip: "pro",
+                chip: "Pro",
             },
             {
                 id: uniqueId(),
                 title: "Projects",
                 href: "https://spike-nextjs-pro-main.vercel.app/apps/user-profile2/projects",
-                chip: "pro",
+                chip: "Pro",
             },
             {
                 id: uniqueId(),
                 title: "Connections",
                 href: "https://spike-nextjs-pro-main.vercel.app/apps/user-profile2/connections",
-                chip: "pro",
+                chip: "Pro",
             },
         ],
     },
@@ -267,19 +267,19 @@ const Menuitems: MenuitemsType[] = [
         icon: "align-vertical-spacing-line-duotone",
         href: "https://spike-nextjs-pro-main.vercel.app/apps/blog/post",
 
-        chip: "pro",
+        chip: "Pro",
         children: [
             {
                 id: uniqueId(),
                 title: "Posts",
                 href: "https://spike-nextjs-pro-main.vercel.app/apps/blog/post",
-                chip: "pro",
+                chip: "Pro",
             },
             {
                 id: uniqueId(),
                 title: "Detail",
                 href: "https://spike-nextjs-pro-main.vercel.app/apps/blog/detail/streaming-video-way-before-it-was-cool-go-dark-tomorrow",
-                chip: "pro",
+                chip: "Pro",
             },
         ],
     },
@@ -289,55 +289,55 @@ const Menuitems: MenuitemsType[] = [
         icon: "smart-speaker-minimalistic-line-duotone",
         href: "/apps/ecommerce/",
 
-        chip: "pro",
+        chip: "Pro",
         children: [
             {
                 id: uniqueId(),
                 title: "Shop",
                 href: "https://spike-nextjs-pro-main.vercel.app/apps/ecommerce/shop",
-                chip: "pro",
+                chip: "Pro",
             },
             {
                 id: uniqueId(),
                 title: "Shop V2",
                 href: "https://spike-nextjs-pro-main.vercel.app/apps/ecommerce/shop2",
-                chip: "pro",
+                chip: "Pro",
             },
             {
                 id: uniqueId(),
                 title: "Detail",
                 href: "https://spike-nextjs-pro-main.vercel.app/apps/ecommerce/detail/1",
-                chip: "pro",
+                chip: "Pro",
             },
             {
                 id: uniqueId(),
                 title: "Detail V2",
                 href: "https://spike-nextjs-pro-main.vercel.app/apps/ecommerce/detail2/1",
-                chip: "pro",
+                chip: "Pro",
             },
             {
                 id: uniqueId(),
                 title: "List",
                 href: "https://spike-nextjs-pro-main.vercel.app/apps/ecommerce/list",
-                chip: "pro",
+                chip: "Pro",
             },
             {
                 id: uniqueId(),
                 title: "Checkout",
                 href: "https://spike-nextjs-pro-main.vercel.app/apps/ecommerce/checkout",
-                chip: "pro",
+                chip: "Pro",
             },
             {
                 id: uniqueId(),
                 title: "Add Product",
                 href: "https://spike-nextjs-pro-main.vercel.app/apps/ecommerce/add-product",
-                chip: "pro",
+                chip: "Pro",
             },
             {
                 id: uniqueId(),
                 title: "Edit Product",
                 href: "https://spike-nextjs-pro-main.vercel.app/apps/ecommerce/edit-product",
-                chip: "pro",
+                chip: "Pro",
             },
         ],
     },
@@ -348,31 +348,31 @@ const Menuitems: MenuitemsType[] = [
         icon: "checklist-minimalistic-line-duotone",
 
         href: "https://spike-nextjs-pro-main.vercel.app/apps/invoice/list",
-        chip: "pro",
+        chip: "Pro",
         children: [
             {
                 id: uniqueId(),
                 title: "List",
                 href: "https://spike-nextjs-pro-main.vercel.app/apps/invoice/list",
-                chip: "pro",
+                chip: "Pro",
             },
             {
                 id: uniqueId(),
                 title: "Details",
                 href: "https://spike-nextjs-pro-main.vercel.app/apps/invoice/detail/PineappleInc",
-                chip: "pro",
+                chip: "Pro",
             },
             {
                 id: uniqueId(),
                 title: "Create",
                 href: "https://spike-nextjs-pro-main.vercel.app/apps/invoice/create",
-                chip: "pro",
+                chip: "Pro",
             },
             {
                 id: uniqueId(),
                 title: "Edit",
                 href: "https://spike-nextjs-pro-main.vercel.app/apps/invoice/edit/PineappleInc",
-                chip: "pro",
+                chip: "Pro",
             },
         ],
     },
@@ -387,42 +387,42 @@ const Menuitems: MenuitemsType[] = [
         icon: "folder-with-files-broken",
 
         href: "https://spike-nextjs-pro-main.vercel.app/apps/invoice/list",
-        chip: "pro",
+        chip: "Pro",
         children: [
             {
                 id: uniqueId(),
                 title: "Roll Base Access",
 
                 href: "https://spike-nextjs-pro-main.vercel.app/theme-pages/casl",
-                chip: "pro",
+                chip: "Pro",
             },
             {
                 id: uniqueId(),
                 title: "Pricing",
 
                 href: "https://spike-nextjs-pro-main.vercel.app/theme-pages/pricing",
-                chip: "pro",
+                chip: "Pro",
             },
             {
                 id: uniqueId(),
                 title: "Account Setting",
 
                 href: "https://spike-nextjs-pro-main.vercel.app/theme-pages/account-settings",
-                chip: "pro",
+                chip: "Pro",
             },
             {
                 id: uniqueId(),
                 title: "FAQ",
 
                 href: "https://spike-nextjs-pro-main.vercel.app/theme-pages/faq",
-                chip: "pro",
+                chip: "Pro",
             },
             {
                 id: uniqueId(),
                 title: "Landingpage",
 
                 href: "https://spike-nextjs-pro-main.vercel.app/landingpage",
-                chip: "pro",
+                chip: "Pro",
             },
         ],
     },
@@ -432,25 +432,25 @@ const Menuitems: MenuitemsType[] = [
         icon: "widget-add-line-duotone",
 
         href: "https://spike-nextjs-pro-main.vercel.app/widgets/cards",
-        chip: "pro",
+        chip: "Pro",
         children: [
             {
                 id: uniqueId(),
                 title: "Cards",
                 href: "https://spike-nextjs-pro-main.vercel.app/widgets/cards",
-                chip: "pro",
+                chip: "Pro",
             },
             {
                 id: uniqueId(),
                 title: "Banners",
                 href: "https://spike-nextjs-pro-main.vercel.app/widgets/banners",
-                chip: "pro",
+                chip: "Pro",
             },
             {
                 id: uniqueId(),
                 title: "Charts",
                 href: "https://spike-nextjs-pro-main.vercel.app/widgets/charts",
-                chip: "pro",
+                chip: "Pro",
             },
         ],
     },
@@ -466,49 +466,49 @@ const Menuitems: MenuitemsType[] = [
         icon: "widget-3-line-duotone",
 
         href: "https://spike-nextjs-pro-main.vercel.app/forms/form-elements/autocomplete",
-        chip: "pro",
+        chip: "Pro",
         children: [
             {
                 id: uniqueId(),
                 title: "Autocomplete",
                 href: "https://spike-nextjs-pro-main.vercel.app/forms/form-elements/autocomplete",
-                chip: "pro",
+                chip: "Pro",
             },
             {
                 id: uniqueId(),
                 title: "Button",
                 href: "https://spike-nextjs-pro-main.vercel.app/forms/form-elements/button",
-                chip: "pro",
+                chip: "Pro",
             },
             {
                 id: uniqueId(),
                 title: "Checkbox",
                 href: "https://spike-nextjs-pro-main.vercel.app/forms/form-elements/checkbox",
-                chip: "pro",
+                chip: "Pro",
             },
             {
                 id: uniqueId(),
                 title: "Radio",
                 href: "https://spike-nextjs-pro-main.vercel.app/forms/form-elements/radio",
-                chip: "pro",
+                chip: "Pro",
             },
             {
                 id: uniqueId(),
                 title: "Date Time",
                 href: "https://spike-nextjs-pro-main.vercel.app/forms/form-elements/date-time",
-                chip: "pro",
+                chip: "Pro",
             },
             {
                 id: uniqueId(),
                 title: "Slider",
                 href: "https://spike-nextjs-pro-main.vercel.app/forms/form-elements/slider",
-                chip: "pro",
+                chip: "Pro",
             },
             {
                 id: uniqueId(),
                 title: "Switch",
                 href: "https://spike-nextjs-pro-main.vercel.app/forms/form-elements/switch",
-                chip: "pro",
+                chip: "Pro",
             },
         ],
     },
@@ -518,7 +518,7 @@ const Menuitems: MenuitemsType[] = [
         icon: "widget-5-line-duotone",
         href: "https://spike-nextjs-pro-main.vercel.app/forms/form-layout",
 
-        chip: "pro",
+        chip: "Pro",
     },
     {
         id: uniqueId(),
@@ -526,7 +526,7 @@ const Menuitems: MenuitemsType[] = [
         icon: "posts-carousel-horizontal-line-duotone",
 
         href: "https://spike-nextjs-pro-main.vercel.app/forms/form-horizontal",
-        chip: "pro",
+        chip: "Pro",
     },
     {
         id: uniqueId(),
@@ -534,7 +534,7 @@ const Menuitems: MenuitemsType[] = [
         icon: "posts-carousel-vertical-line-duotone",
 
         href: "https://spike-nextjs-pro-main.vercel.app/forms/form-vertical",
-        chip: "pro",
+        chip: "Pro",
     },
     {
         id: uniqueId(),
@@ -542,7 +542,7 @@ const Menuitems: MenuitemsType[] = [
         icon: "menu-dots-circle-line-duotone",
 
         href: "https://spike-nextjs-pro-main.vercel.app/forms/form-custom",
-        chip: "pro",
+        chip: "Pro",
     },
     {
         id: uniqueId(),
@@ -550,14 +550,14 @@ const Menuitems: MenuitemsType[] = [
         icon: "recive-twice-square-line-duotone",
 
         href: "https://spike-nextjs-pro-main.vercel.app/forms/form-wizard",
-        chip: "pro",
+        chip: "Pro",
     },
     {
         id: uniqueId(),
         title: "Form Validation",
         icon: "shield-warning-line-duotone",
         href: "https://spike-nextjs-pro-main.vercel.app/forms/form-validation",
-        chip: "pro",
+        chip: "Pro",
     },
     {
         id: uniqueId(),
@@ -565,7 +565,7 @@ const Menuitems: MenuitemsType[] = [
         icon: "gallery-edit-line-duotone",
 
         href: "https://spike-nextjs-pro-main.vercel.app/forms/form-tiptap",
-        chip: "pro",
+        chip: "Pro",
     },
 
     {
@@ -578,79 +578,79 @@ const Menuitems: MenuitemsType[] = [
         icon: "code-scan-line-duotone",
 
         href: "https://spike-nextjs-pro-main.vercel.app/ui-components/alert",
-        chip: "pro",
+        chip: "Pro",
         children: [
             {
                 id: uniqueId(),
                 title: "Alert",
                 href: "https://spike-nextjs-pro-main.vercel.app/ui-components/alert",
-                chip: "pro",
+                chip: "Pro",
             },
             {
                 id: uniqueId(),
                 title: "Accordion",
                 href: "https://spike-nextjs-pro-main.vercel.app/ui-components/accordion",
-                chip: "pro",
+                chip: "Pro",
             },
             {
                 id: uniqueId(),
                 title: "Avatar",
                 href: "https://spike-nextjs-pro-main.vercel.app/ui-components/avatar",
-                chip: "pro",
+                chip: "Pro",
             },
             {
                 id: uniqueId(),
                 title: "Chip",
                 href: "https://spike-nextjs-pro-main.vercel.app/ui-components/chip",
-                chip: "pro",
+                chip: "Pro",
             },
             {
                 id: uniqueId(),
                 title: "Dialog",
                 href: "https://spike-nextjs-pro-main.vercel.app/ui-components/dialog",
-                chip: "pro",
+                chip: "Pro",
             },
             {
                 id: uniqueId(),
                 title: "List",
                 href: "https://spike-nextjs-pro-main.vercel.app/ui-components/list",
-                chip: "pro",
+                chip: "Pro",
             },
             {
                 id: uniqueId(),
                 title: "Popover",
                 href: "https://spike-nextjs-pro-main.vercel.app/ui-components/popover",
-                chip: "pro",
+                chip: "Pro",
             },
             {
                 id: uniqueId(),
                 title: "Rating",
                 href: "https://spike-nextjs-pro-main.vercel.app/ui-components/rating",
-                chip: "pro",
+                chip: "Pro",
             },
             {
                 id: uniqueId(),
                 title: "Tabs",
                 href: "https://spike-nextjs-pro-main.vercel.app/ui-components/tabs",
-                chip: "pro",
+                chip: "Pro",
             },
             {
                 id: uniqueId(),
                 title: "Tooltip",
                 href: "https://spike-nextjs-pro-main.vercel.app/ui-components/tooltip",
-                chip: "pro",
+                chip: "Pro",
             },
             {
                 id: uniqueId(),
                 title: "Transfer List",
                 href: "https://spike-nextjs-pro-main.vercel.app/ui-components/transfer-list",
-                chip: "pro",
+                chip: "Pro",
             },
             {
                 id: uniqueId(),
                 title: "Typography",
                 href: "https://spike-nextjs-pro-main.vercel.app/ui-components/typography",
-                chip: "pro",
+                chip: "Pro",
             },
         ],
     },
@@ -665,49 +665,49 @@ const Menuitems: MenuitemsType[] = [
         icon: "tablet-line-duotone",
 
         href: "https://spike-nextjs-pro-main.vercel.app/apps/invoice/list",
-        chip: "pro",
+        chip: "Pro",
         children: [
             {
                 id: uniqueId(),
                 title: "Basic",
 
                 href: "https://spike-nextjs-pro-main.vercel.app/tables/basic",
-                chip: "pro",
+                chip: "Pro",
             },
             {
                 id: uniqueId(),
                 title: "Collapsible",
 
                 href: "https://spike-nextjs-pro-main.vercel.app/tables/collapsible",
-                chip: "pro",
+                chip: "Pro",
             },
             {
                 id: uniqueId(),
                 title: "Enhanced",
 
                 href: "https://spike-nextjs-pro-main.vercel.app/tables/enhanced",
-                chip: "pro",
+                chip: "Pro",
             },
             {
                 id: uniqueId(),
                 title: "Fixed Header",
 
                 href: "https://spike-nextjs-pro-main.vercel.app/tables/fixed-header",
-                chip: "pro",
+                chip: "Pro",
             },
             {
                 id: uniqueId(),
                 title: "Pagination",
 
                 href: "https://spike-nextjs-pro-main.vercel.app/tables/pagination",
-                chip: "pro",
+                chip: "Pro",
             },
             {
                 id: uniqueId(),
                 title: "Search",
 
                 href: "https://spike-nextjs-pro-main.vercel.app/tables/search",
-                chip: "pro",
+                chip: "Pro",
             },
         ],
     },
@@ -717,79 +717,79 @@ const Menuitems: MenuitemsType[] = [
         title: "React Table",
         icon: "flip-vertical-line-duotone",
         href: "https://spike-nextjs-pro-main.vercel.app/react-tables/basic",
-        chip: "pro",
+        chip: "Pro",
         children: [
             {
                 id: uniqueId(),
                 title: "Basic",
                 href: "https://spike-nextjs-pro-main.vercel.app/react-tables/basic",
-                chip: "pro",
+                chip: "Pro",
             },
             {
                 id: uniqueId(),
                 title: "Dense",
                 href: "https://spike-nextjs-pro-main.vercel.app/react-tables/dense",
-                chip: "pro",
+                chip: "Pro",
             },
             {
                 id: uniqueId(),
                 title: "Filter",
                 href: "https://spike-nextjs-pro-main.vercel.app/react-tables/filter",
-                chip: "pro",
+                chip: "Pro",
             },
             {
                 id: uniqueId(),
                 title: "Row Selection",
                 href: "https://spike-nextjs-pro-main.vercel.app/react-tables/row-selection",
-                chip: "pro",
+                chip: "Pro",
             },
             {
                 id: uniqueId(),
                 title: "Pagination",
                 href: "https://spike-nextjs-pro-main.vercel.app/react-tables/pagination",
-                chip: "pro",
+                chip: "Pro",
             },
             {
                 id: uniqueId(),
                 title: "Sorting",
                 href: "https://spike-nextjs-pro-main.vercel.app/react-tables/sorting",
-                chip: "pro",
+                chip: "Pro",
             },
             {
                 id: uniqueId(),
                 title: "Column Visibility",
                 href: "https://spike-nextjs-pro-main.vercel.app/react-tables/column-visiblity",
-                chip: "pro",
+                chip: "Pro",
             },
             {
                 id: uniqueId(),
                 title: "Drag n Drop",
                 href: "https://spike-nextjs-pro-main.vercel.app/react-tables/drag-n-drop",
-                chip: "pro",
+                chip: "Pro",
             },
             {
                 id: uniqueId(),
                 title: "Editable",
                 href: "https://spike-nextjs-pro-main.vercel.app/react-tables/editable",
-                chip: "pro",
+                chip: "Pro",
             },
             {
                 id: uniqueId(),
                 title: "Empty",
                 href: "https://spike-nextjs-pro-main.vercel.app/react-tables/empty",
-                chip: "pro",
+                chip: "Pro",
             },
             {
                 id: uniqueId(),
                 title: "Expand",
                 href: "https://spike-nextjs-pro-main.vercel.app/react-tables/expanding",
-                chip: "pro",
+                chip: "Pro",
             },
             {
                 id: uniqueId(),
                 title: "Sticky",
                 href: "https://spike-nextjs-pro-main.vercel.app/react-tables/sticky",
-                chip: "pro",
+                chip: "Pro",
             },
         ],
     },
@@ -803,35 +803,35 @@ const Menuitems: MenuitemsType[] = [
         title: "Mui Charts",
         icon: "chart-linear",
         href: "https://spike-nextjs-pro-main.vercel.app/react-tables/basic",
-        chip: "pro",
+        chip: "Pro",
         children: [
             {
                 id: uniqueId(),
                 title: "Bar Charts",
                 icon: "chart-square-linear",
                 href: "https://spike-nextjs-pro-main.vercel.app/muicharts/barcharts",
-                chip: "pro",
+                chip: "Pro",
             },
             {
                 id: uniqueId(),
                 title: "Line Charts",
                 icon: "chart-linear",
                 href: "https://spike-nextjs-pro-main.vercel.app/muicharts/linecharts/line",
-                chip: "pro",
+                chip: "Pro",
                 children: [
                     {
                         id: uniqueId(),
                         title: "Lines",
                         icon: "stop-circle-line-duotone",
                         href: "https://spike-nextjs-pro-main.vercel.app/muicharts/linecharts/line",
-                        chip: "pro",
+                        chip: "Pro",
                     },
                     {
                         id: uniqueId(),
                         title: "Area",
                         icon: "stop-circle-line-duotone",
                         href: "https://spike-nextjs-pro-main.vercel.app/muicharts/linecharts/area",
-                        chip: "pro",
+                        chip: "Pro",
                     },
                 ],
             },
@@ -840,28 +840,28 @@ const Menuitems: MenuitemsType[] = [
                 title: "Pie Charts",
                 icon: "pie-chart-2-linear",
                 href: "https://spike-nextjs-pro-main.vercel.app/muicharts/piecharts",
-                chip: "pro",
+                chip: "Pro",
             },
             {
                 id: uniqueId(),
                 title: "Scatter Charts",
                 icon: "align-bottom-linear",
                 href: "https://spike-nextjs-pro-main.vercel.app/muicharts/scattercharts",
-                chip: "pro",
+                chip: "Pro",
             },
             {
                 id: uniqueId(),
                 title: "Sparkline Charts",
                 icon: "chart-2-line-duotone",
                 href: "https://spike-nextjs-pro-main.vercel.app/muicharts/sparklinecharts",
-                chip: "pro",
+                chip: "Pro",
             },
             {
                 id: uniqueId(),
                 title: "Gauge Charts",
                 icon: "pie-chart-outline",
                 href: "https://spike-nextjs-pro-main.vercel.app/muicharts/gaugecharts",
-                chip: "pro",
+                chip: "Pro",
             },
         ],
     },
@@ -871,42 +871,42 @@ const Menuitems: MenuitemsType[] = [
         title: "TreeView",
         icon: "benzene-ring-broken",
         href: "https://spike-nextjs-pro-main.vercel.app/mui-trees/simpletree/simpletree-items",
-        chip: "pro",
+        chip: "Pro",
         children: [
             {
                 id: uniqueId(),
                 title: "Items",
                 icon: "stop-circle-line-duotone",
                 href: "https://spike-nextjs-pro-main.vercel.app/mui-trees/simpletree/simpletree-items",
-                chip: "pro",
+                chip: "Pro",
             },
             {
                 id: uniqueId(),
                 title: "Selection",
                 icon: "stop-circle-line-duotone",
                 href: "https://spike-nextjs-pro-main.vercel.app/mui-trees/simpletree/simpletree-selection",
-                chip: "pro",
+                chip: "Pro",
             },
             {
                 id: uniqueId(),
                 title: "Expansion",
                 icon: "stop-circle-line-duotone",
                 href: "https://spike-nextjs-pro-main.vercel.app/mui-trees/simpletree/simpletree-expansion",
-                chip: "pro",
+                chip: "Pro",
             },
             {
                 id: uniqueId(),
                 title: "Customization",
                 icon: "stop-circle-line-duotone",
                 href: "https://spike-nextjs-pro-main.vercel.app/mui-trees/simpletree/simpletree-customization",
-                chip: "pro",
+                chip: "Pro",
             },
             {
                 id: uniqueId(),
                 title: "Focus",
                 icon: "stop-circle-line-duotone",
                 href: "https://spike-nextjs-pro-main.vercel.app/mui-trees/simpletree/simpletree-focus",
-                chip: "pro",
+                chip: "Pro",
             },
         ],
     },
@@ -920,7 +920,7 @@ const Menuitems: MenuitemsType[] = [
         title: "Line",
         icon: "align-right-line-duotone",
 
-        chip: "pro",
+        chip: "Pro",
         href: "https://spike-nextjs-pro-main.vercel.app/charts/line",
     },
     {
@@ -929,14 +929,14 @@ const Menuitems: MenuitemsType[] = [
         icon: "pie-chart-line-duotone",
 
         href: "https://spike-nextjs-pro-main.vercel.app/charts/gradient",
-        chip: "pro",
+        chip: "Pro",
     },
     {
         id: uniqueId(),
         title: "Area",
         icon: "chart-square-line-duotone",
         href: "https://spike-nextjs-pro-main.vercel.app/charts/area",
-        chip: "pro",
+        chip: "Pro",
     },
     {
         id: uniqueId(),
@@ -944,7 +944,7 @@ const Menuitems: MenuitemsType[] = [
         icon: "align-top-line-duotone",
 
         href: "https://spike-nextjs-pro-main.vercel.app/charts/candlestick",
-        chip: "pro",
+        chip: "Pro",
     },
     {
         id: uniqueId(),
@@ -952,7 +952,7 @@ const Menuitems: MenuitemsType[] = [
         icon: "align-left-line-duotone",
 
         href: "https://spike-nextjs-pro-main.vercel.app/charts/column",
-        chip: "pro",
+        chip: "Pro",
     },
     {
         id: uniqueId(),
@@ -960,7 +960,7 @@ const Menuitems: MenuitemsType[] = [
         icon: "pie-chart-line-duotone",
 
         href: "https://spike-nextjs-pro-main.vercel.app/charts/doughnut",
-        chip: "pro",
+        chip: "Pro",
     },
     {
         id: uniqueId(),
@@ -968,7 +968,7 @@ const Menuitems: MenuitemsType[] = [
         icon: "asteroid-line-duotone",
 
         href: "https://spike-nextjs-pro-main.vercel.app/charts/radialbar",
-        chip: "pro",
+        chip: "Pro",
     },
     {
         navlabel: true,
@@ -992,56 +992,56 @@ const Menuitems: MenuitemsType[] = [
         title: "AuthPage",
         icon: "user-plus-line-duotone",
         href: "https://spike-nextjs-pro-main.vercel.app/auth/auth1/login",
-        chip: "pro",
+        chip: "Pro",
 
         children: [
             {
                 id: uniqueId(),
                 title: "Side Login",
                 href: "https://spike-nextjs-pro-main.vercel.app/auth/auth1/login",
-                chip: "pro",
+                chip: "Pro",
             },
             {
                 id: uniqueId(),
                 title: "Boxed Login",
                 href: "https://spike-nextjs-pro-main.vercel.app/auth/auth2/login",
-                chip: "pro",
+                chip: "Pro",
             },
             {
                 id: uniqueId(),
                 title: "Side Register",
                 href: "https://spike-nextjs-pro-main.vercel.app/auth/auth1/register",
-                chip: "pro",
+                chip: "Pro",
             },
             {
                 id: uniqueId(),
                 title: "Boxed Register",
                 href: "https://spike-nextjs-pro-main.vercel.app/auth/auth2/register",
-                chip: "pro",
+                chip: "Pro",
             },
             {
                 id: uniqueId(),
                 title: "Side Forgot PWD",
                 href: "https://spike-nextjs-pro-main.vercel.app/auth/auth1/forgot-password",
-                chip: "pro",
+                chip: "Pro",
             },
             {
                 id: uniqueId(),
                 title: "Boxed Forgot PWD",
                 href: "https://spike-nextjs-pro-main.vercel.app/auth/auth2/forgot-password",
-                chip: "pro",
+                chip: "Pro",
             },
             {
                 id: uniqueId(),
                 title: "Side Two Steps",
                 href: "https://spike-nextjs-pro-main.vercel.app/auth/auth1/two-steps",
-                chip: "pro",
+                chip: "Pro",
             },
             {
                 id: uniqueId(),
                 title: "Boxed Two Steps",
                 href: "https://spike-nextjs-pro-main.vercel.app/auth/auth2/two-steps",
-                chip: "pro",
+                chip: "Pro",
             },
             {
                 id: uniqueId(),
@@ -1049,7 +1049,7 @@ const Menuitems: MenuitemsType[] = [
                 icon: "bug-line-duotone",
 
                 href: "https://spike-nextjs-pro-main.vercel.app/auth/error",
-                chip: "pro",
+                chip: "Pro",
             },
             {
                 id: uniqueId(),
@@ -1057,7 +1057,7 @@ const Menuitems: MenuitemsType[] = [
                 icon: "settings-line-duotone",
 
                 href: "https://spike-nextjs-pro-main.vercel.app/auth/maintenance",
-                chip: "pro",
+                chip: "Pro",
             },
         ],
     },
