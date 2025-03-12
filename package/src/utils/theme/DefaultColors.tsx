@@ -142,6 +142,7 @@ const baselightTheme = createTheme({
                 },
 
                 a: {
+                    color: '#111c2d',
                     textDecoration: "none",
                 },
                 ' .simplebar-scrollbar:before': {
