@@ -35,7 +35,7 @@ export const Upgrade = () => (
         </Typography>
         <Button
           color="secondary"
-          href="https://www.wrappixel.com/templates/spike-nextjs-admin-template/?ref=376"
+          href="https://www.wrappixel.com/templates/spike-nextjs-admin-template/?ref=376#demos"
 
           target="_blank"
           disableElevation
