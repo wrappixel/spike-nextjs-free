@@ -87,10 +87,10 @@ const StyledButton = styled(Button)(({ theme }) => ({
 }));
 
 const MenuItems: MenuItemType[] = [
-    { id: 1, title: 'Bootstrap Preview', href: 'https://www.wrappixel.com/templates/spike-bootstrap-admin-dashboard/?ref=376#demos' },
+    { id: 1, title: 'NextJs Preview', href: 'https://www.wrappixel.com/templates/spike-nextjs-admin-template/?ref=376#demos' },
     { id: 2, title: 'Angular Preview', href: 'https://www.wrappixel.com/templates/spike-angular-admin-template/?ref=376#demos' },
     { id: 3, title: 'VueJs Preview', href: 'https://www.wrappixel.com/templates/spike-vuejs-admin-dashboard/?ref=376#demos' },
-    { id: 4, title: 'NextJs Preview', href: 'https://www.wrappixel.com/templates/spike-nextjs-admin-template/?ref=376#demos' },
+    { id: 4, title: 'Bootstrap Preview', href: 'https://www.wrappixel.com/templates/spike-bootstrap-admin-dashboard/?ref=376#demos' },
     { id: 5, title: 'NuxtJs Preview', href: 'https://www.wrappixel.com/templates/spike-nuxtjs-admin-template/?ref=376#demos' },
     { id: 6, title: 'Tailwind Preview', href: 'https://www.wrappixel.com/templates/spike-tailwind-admin-template/?ref=376#demos' },
 ];

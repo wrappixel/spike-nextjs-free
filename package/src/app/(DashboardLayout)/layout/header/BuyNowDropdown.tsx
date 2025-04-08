@@ -89,10 +89,10 @@ const StyledButton = styled(Button)(({ theme }) => ({
 }));
 
 const MenuItems: MenuItemType[] = [
-    { id: 1, title: 'Buy Bootstrap Version', href: 'https://www.wrappixel.com/templates/spike-bootstrap-admin-dashboard/?ref=376#package-card' },
+    { id: 1, title: 'Buy NextJs Version', href: 'https://www.wrappixel.com/templates/spike-nextjs-admin-template/?ref=376#package-card' },
     { id: 2, title: 'Buy Angular Version', href: 'https://www.wrappixel.com/templates/spike-angular-admin-template/?ref=376#package-card' },
     { id: 3, title: 'Buy VueJs Version', href: 'https://www.wrappixel.com/templates/spike-vuejs-admin-dashboard/?ref=376#package-card' },
-    { id: 4, title: 'Buy NextJs Version', href: 'https://www.wrappixel.com/templates/spike-nextjs-admin-template/?ref=376#package-card' },
+    { id: 4, title: 'Buy Bootstrap Version', href: 'https://www.wrappixel.com/templates/spike-bootstrap-admin-dashboard/?ref=376#package-card' },
     { id: 5, title: 'Buy NuxtJs Version', href: 'https://www.wrappixel.com/templates/spike-nuxtjs-admin-template/?ref=376#package-card' },
     { id: 6, title: 'Buy Tailwind Version', href: 'https://www.wrappixel.com/templates/spike-tailwind-admin-template/?ref=376#package-card' },
 ];
