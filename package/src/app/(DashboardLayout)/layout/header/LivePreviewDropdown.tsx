@@ -88,7 +88,7 @@ const StyledButton = styled(Button)(({ theme }) => ({
     '&:hover': {
         backgroundColor: '#8d70f8',
     },
-    '& .MuiButton-endIcon': {
+    '& .MuiButton-endIcon': { 
         marginLeft: '4px',
     },
 }));
