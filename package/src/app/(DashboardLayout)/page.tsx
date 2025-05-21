@@ -1,30 +1,30 @@
 'use client'
-import { Grid2 as Grid, Box } from '@mui/material';
-import PageContainer from '@/app/(DashboardLayout)/components/container/PageContainer';
+import { Grid, Box } from '@mui/material'
+import PageContainer from '@/app/(DashboardLayout)/components/container/PageContainer'
 // components
-import ProfitExpenses from '@/app/(DashboardLayout)/components/dashboard/ProfitExpenses';
-import TrafficDistribution from '@/app/(DashboardLayout)/components/dashboard/TrafficDistribution';
-import UpcomingSchedules from '@/app/(DashboardLayout)/components/dashboard/UpcomingSchedules';
-import TopPayingClients from '@/app/(DashboardLayout)/components/dashboard/TopPayingClients';
-import Blog from '@/app/(DashboardLayout)/components/dashboard/Blog';
-import ProductSales from '@/app/(DashboardLayout)/components/dashboard/ProductSales';
+import ProfitExpenses from '@/app/(DashboardLayout)/components/dashboard/ProfitExpenses'
+import TrafficDistribution from '@/app/(DashboardLayout)/components/dashboard/TrafficDistribution'
+import UpcomingSchedules from '@/app/(DashboardLayout)/components/dashboard/UpcomingSchedules'
+import TopPayingClients from '@/app/(DashboardLayout)/components/dashboard/TopPayingClients'
+import Blog from '@/app/(DashboardLayout)/components/dashboard/Blog'
+import ProductSales from '@/app/(DashboardLayout)/components/dashboard/ProductSales'
 
 const Dashboard = () => {
   return (
-    (<PageContainer title="Dashboard" description="this is Dashboard">
+    <PageContainer title='Dashboard' description='this is Dashboard'>
       <Box>
         <Grid container spacing={3}>
           <Grid
             size={{
               xs: 12,
-              lg: 8
+              lg: 8,
             }}>
             <ProfitExpenses />
           </Grid>
           <Grid
             size={{
               xs: 12,
-              lg: 4
+              lg: 4,
             }}>
             <Grid container spacing={3}>
               <Grid size={12}>
@@ -38,14 +38,14 @@ const Dashboard = () => {
           <Grid
             size={{
               xs: 12,
-              lg: 4
+              lg: 4,
             }}>
             <UpcomingSchedules />
           </Grid>
           <Grid
             size={{
               xs: 12,
-              lg: 8
+              lg: 8,
             }}>
             <TopPayingClients />
           </Grid>
@@ -54,8 +54,8 @@ const Dashboard = () => {
           </Grid>
         </Grid>
       </Box>
-    </PageContainer>)
-  );
+    </PageContainer>
+  )
 }
 
-export default Dashboard;
+export default Dashboard

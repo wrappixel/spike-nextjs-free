@@ -14,8 +14,6 @@ const Sidebar = (
 
   if (lgUp) {
     return (
-
-
       <Box
 
         sx={{
@@ -26,12 +24,14 @@ const Sidebar = (
           anchor="left"
           open
           variant="permanent"
-          PaperProps={{
-            sx: {
-              width: sidebarWidth,
-              boxShadow: '0 9px 17.5px rgb(0, 0, 0, 0.05)!important',
-              top: '72px'
-            },
+          slotProps={{
+            paper: {
+              sx: {
+                width: sidebarWidth,
+                boxShadow: '0 9px 17.5px rgb(0, 0, 0, 0.05)!important',
+                top: '72px'
+              },
+            }
           }}
         >
  
@@ -52,22 +52,22 @@ const Sidebar = (
       open={isMobileSidebar}
       onClose={() => setIsMobileSidebar(!isMobileSidebar)}
       variant="temporary"
-      PaperProps={{
-        sx: {
-          width: sidebarWidth,
-          boxShadow: '0 9px 17.5px rgb(0, 0, 0, 0.05)!important',
-overflowX: 'hidden'
-        },
+      slotProps={{
+        paper: {
+          sx: {
+            width: sidebarWidth,
+            boxShadow: '0 9px 17.5px rgb(0, 0, 0, 0.05)!important',
+  overflowX: 'hidden'
+          },
+        }
       }}
     >
-
       {/* ------------------------------------------- */}
       {/* Sidebar For Mobile */}
       {/* ------------------------------------------- */}
       <Scrollbar sx={{ height: "calc(100% - 73px)", overflowX: 'hidden' }}>
         <SidebarItems />
       </Scrollbar>
-
     </Drawer>
   );
 };

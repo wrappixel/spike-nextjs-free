@@ -112,12 +112,14 @@ const ProfitExpenses = () => {
           </IconButton>
           <Menu
             id="long-menu"
-            MenuListProps={{
-              "aria-labelledby": "long-button",
-            }}
             anchorEl={anchorEl}
             open={open}
             onClose={handleClose}
+            slotProps={{
+              list: {
+                "aria-labelledby": "long-button",
+              }
+            }}
           >
             {options.map((option) => (
               <MenuItem

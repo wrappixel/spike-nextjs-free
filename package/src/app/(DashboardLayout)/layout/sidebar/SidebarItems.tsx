@@ -18,7 +18,7 @@ import theme from "@/utils/theme";
 const renderMenuItems = (items: any[], pathDirect: string) => {
 
 
-    const primary = theme.palette.primary.light;
+
     return items.map((item) => {
         if (item.subheader) {
             // Display Subheader
@@ -67,18 +67,17 @@ const renderMenuItems = (items: any[], pathDirect: string) => {
                 }
                 component="div"
                 link={item.href && item.href !== "" ? item.href : undefined}
-                target={item.href && item.href.startsWith("https") ? "_blank" : "_self"}
+
                 badge={item.chip ? true : false}
                 badgeContent={item.chip || ""}
                 badgeColor='secondary'
                 badgeTextColor="#0085db"
                 disabled={item.disabled}
             >
-                <Link href={item.href} passHref legacyBehavior >
-                    <a target={item.href.startsWith("https") ? "_blank" : "_self"} rel="noopener noreferrer">
-                        <Typography component='span' color={pathDirect === item?.href ? '#fff' : 'inherit'}>
-                            {item.title}</Typography>
-                    </a>
+
+                <Link href={item.href} target={item.href && item.href.startsWith("https") ? "_blank" : "_self"}>
+                    <Typography color={pathDirect === item?.href ? '#fff' : 'inherit'}>
+                        {item.title}</Typography>
                 </Link>
             </MenuItem>
 

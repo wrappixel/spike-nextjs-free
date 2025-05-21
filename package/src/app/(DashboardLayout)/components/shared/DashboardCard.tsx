@@ -4,13 +4,13 @@ import { Card, CardContent, Typography, Stack, Box } from "@mui/material";
 type Props = {
   title?: string;
   subtitle?: string;
-  action?: JSX.Element | any;
-  footer?: JSX.Element;
-  cardheading?: string | JSX.Element;
-  headtitle?: string | JSX.Element;
-  headsubtitle?: string | JSX.Element;
-  children?: JSX.Element;
-  middlecontent?: string | JSX.Element;
+  action?: React.ReactNode | any;
+  footer?: React.ReactNode;
+  cardheading?: string | React.ReactNode;
+  headtitle?: string | React.ReactNode;
+  headsubtitle?: string | React.ReactNode;
+  children?: React.ReactNode;
+  middlecontent?: string | React.ReactNode;
 };
 
 const DashboardCard = ({
@@ -25,7 +25,7 @@ const DashboardCard = ({
   middlecontent,
 }: Props) => {
   return (
-    (<Card sx={{ padding: 0 }} elevation={9} variant={undefined}>
+    <Card sx={{ padding: 0 }} elevation={9} variant={undefined}>
       {cardheading ? (
         <CardContent>
           <Typography variant="h5">{headtitle}</Typography>
@@ -39,11 +39,10 @@ const DashboardCard = ({
             <Stack
               direction="row"
               spacing={2}
-              sx={{
-                justifyContent: "space-between",
-                alignItems: "center",
-                mb: 3
-              }}>
+              justifyContent="space-between"
+              alignItems={"center"}
+              mb={3}
+            >
               <Box>
                 {title ? <Typography variant="h5">{title}</Typography> : ""}
 
@@ -62,9 +61,10 @@ const DashboardCard = ({
           {children}
         </CardContent>
       )}
+
       {middlecontent}
       {footer}
-    </Card>)
+    </Card>
   );
 };
 

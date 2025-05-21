@@ -1,9 +1,8 @@
-'use client';
-import { Paper, Box, Grid2 as Grid } from '@mui/material';
-import PageContainer from '@/app/(DashboardLayout)/components/container/PageContainer';
-import DashboardCard from '@/app/(DashboardLayout)/components/shared/DashboardCard';
-import { createTheme, ThemeProvider, styled } from '@mui/material/styles';
-
+'use client'
+import { Paper, Box, Grid } from '@mui/material'
+import PageContainer from '@/app/(DashboardLayout)/components/container/PageContainer'
+import DashboardCard from '@/app/(DashboardLayout)/components/shared/DashboardCard'
+import { createTheme, ThemeProvider, styled } from '@mui/material/styles'
 
 const Item = styled(Paper)(({ theme }) => ({
   ...theme.typography.body1,
@@ -11,15 +10,15 @@ const Item = styled(Paper)(({ theme }) => ({
   color: theme.palette.text.secondary,
   height: 60,
   lineHeight: '60px',
-}));
+}))
 
-const darkTheme = createTheme({ palette: { mode: 'dark' } });
-const lightTheme = createTheme({ palette: { mode: 'light' } });
+const darkTheme = createTheme({ palette: { mode: 'dark' } })
+const lightTheme = createTheme({ palette: { mode: 'light' } })
 
 const Shadow = () => {
   return (
-    (<PageContainer title="Shadow" description="this is Shadow">
-      <DashboardCard title="Shadow">
+    <PageContainer title='Shadow' description='this is Shadow'>
+      <DashboardCard title='Shadow'>
         <Grid container spacing={2}>
           {[lightTheme, darkTheme].map((theme, index) => (
             <Grid key={index} size={6}>
@@ -31,8 +30,7 @@ const Shadow = () => {
                     display: 'grid',
                     gridTemplateColumns: { md: '1fr 1fr' },
                     gap: 2,
-                  }}
-                >
+                  }}>
                   {[0, 1, 2, 3, 4, 6, 8, 12, 16, 24].map((elevation) => (
                     <Item key={elevation} elevation={elevation}>
                       {`elevation=${elevation}`}
@@ -44,8 +42,8 @@ const Shadow = () => {
           ))}
         </Grid>
       </DashboardCard>
-    </PageContainer>)
-  );
-};
+    </PageContainer>
+  )
+}
 
-export default Shadow;
+export default Shadow
