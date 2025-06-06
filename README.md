@@ -274,10 +274,13 @@ Follow these simple steps to start contributing:
 - <p><a href="https://www.wrappixel.com/templates/category/vuetify-templates/?ref=376">Vuetify Templates</a> from Wrappixel</p>
 - <p><a href="https://www.wrappixel.com/templates/category/nextjs-templates/?ref=376">NextJs Templates</a> from Wrappixel</p>
 - <p><a href="https://www.wrappixel.com/templates/category/nuxt-templates/?ref=376">Nuxt Templates</a> from Wrappixel</p>
-- <p><a href="https://www.wrappixel.com/templates/category/tailwind-dashboard/?ref=376">Tailwind Templates</a> from Wrappixel</p>
+- <p><a href="https://www.wrappixel.com/templates/category/tailwind-dashboard/?ref=376">Tailwind Dashboard Templates</a> from Wrappixel</p>
 
 ---
 
 ## 🌐 We are social
 
 [![](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/wrappixel)  [![twitter](https://img.shields.io/badge/twitter-x?style=for-the-badge&logo=x&logoColor=white&color=%230f1419)](https://twitter.com/wrappixel)  [![facebook](https://img.shields.io/badge/facebook-logo?style=for-the-badge&logo=facebook&logoColor=white&color=%230866ff)](https://www.facebook.com/wrappixel)  [![instagram](https://img.shields.io/badge/instagram-logo?style=for-the-badge&logo=instagram&logoColor=white&color=%23F35369)](https://www.instagram.com/wrappixel)  [![youtube](https://img.shields.io/badge/youtube-logo?style=for-the-badge&logo=youtube&logoColor=white&color=%23cc0000)](https://www.youtube.com/@wrappixel)  [![](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/company/wrappixel)
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/wrappixel/spike-nextjs-free&root-directory=package)
+
