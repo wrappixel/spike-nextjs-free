@@ -12,7 +12,6 @@ import {
 import Menuitems from "./MenuItems";
 import { Icon } from "@iconify/react";
 import Link from "next/link";
-import { Upgrade } from "./Updrade";
 import theme from "@/utils/theme";
 
 const renderMenuItems = (items: any[], pathDirect: string) => {
@@ -68,8 +67,8 @@ const renderMenuItems = (items: any[], pathDirect: string) => {
                 component="div"
                 link={item.href && item.href !== "" ? item.href : undefined}
 
-                badge={item.chip ? true : false}
-                badgeContent={item.chip || ""}
+                badge={item.chip && item.chip.toLowerCase() !== 'pro' ? true : false}
+                badgeContent={item.chip && item.chip.toLowerCase() !== 'pro' ? item.chip : ""}
                 badgeColor='secondary'
                 badgeTextColor="#0085db"
                 disabled={item.disabled}
@@ -92,13 +91,10 @@ const SidebarItems = () => {
 
     return (
         <Box sx={{ px: "20px", overflowX: 'hidden' }}>
-            <MUI_Sidebar width={"100%"} showProfile={false} themeColor={"#0085db"} themeSecondaryColor={'#0085db1a'}>
-                <Box sx={{ margin: "0 -24px" }}>
-                    <Logo img="/images/logos/logo-dark.svg" component={Link} href="/" >Spike</Logo>
-                </Box>
+            <MUI_Sidebar width={"100%"} showProfile={false} themeColor={"#e0e0e0"} themeSecondaryColor={'#00000000'}>
                 {renderMenuItems(Menuitems, pathDirect)}
             </MUI_Sidebar>
-            <Upgrade />
+            {/* Upgrade card removed */}
         </Box>
     );
 };

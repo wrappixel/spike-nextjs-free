@@ -1,15 +1,15 @@
-import { Box, AppBar, Toolbar, styled, Stack, Button } from "@mui/material";
+import { Box, AppBar, Toolbar, styled, Stack, Button, Chip } from "@mui/material";
 
 import { IconLifebuoy, IconGift, IconBriefcase } from "@tabler/icons-react";
 import { Typography } from "@mui/material";
 import Link from "next/link";
 import { Icon } from "@iconify/react";
-import LivePreviewDropdown from "./LivePreviewDropdown";
+// import LivePreviewDropdown from "./LivePreviewDropdown";
 
 const Topbar = () => {
   const AppBarStyled = styled(AppBar)(({ theme }) => ({
     boxShadow: "none",
-    background: "linear-gradient(90deg,#0f0533 0,#1b0a5c 100%)",
+    background: "linear-gradient(90deg,#2E5BBA 0,#3B82F6 100%)", // Medical blue gradient
     justifyContent: "center",
     [theme.breakpoints.up("lg")]: {
       minHeight: "72px",
@@ -47,55 +47,30 @@ const Topbar = () => {
             display: { xs: "none", md: "flex" }
           }}
         >
-          <Link href="https://www.wrappixel.com/" style={{ display: "flex" }}>
-            <img src="/images/logos/logo-wrappixel.svg" width={147} alt="logo" />
-          </Link>
+          <Typography variant="h6" sx={{ color: "white", fontWeight: "bold" }}>
+            Medical Dashboard
+          </Typography>
           <Stack
-
             direction="row"
             sx={{ gap: "16px", paddingLeft: "20px", borderLeft: "1px solid rgba(255,255,255,.4)", display: { xs: "none", lg: "flex" } }}
           >
             <Box sx={{ display: "flex", alignItems: "center" }}>
-              <Link
-                href="https://www.wrappixel.com/templates/category/nextjs-templates/" 
-                style={{ display: "flex", height: "fit-content" }}
-                target="_blank"
-              >
-                <GhostButton sx={{ gap: "8px", padding: "0", fontSize: "16px", ":hover": { color: "#714bff", backgroundColor: "transparent" } }}>
-                  <Icon icon="solar:window-frame-linear" width={20} />
-
-                  Templates
-                </GhostButton>
-              </Link>
-
+              <GhostButton sx={{ gap: "8px", padding: "0", fontSize: "16px", ":hover": { color: "#2E5BBA", backgroundColor: "transparent" } }}>
+                <Icon icon="mdi:medical-bag" width={20} />
+                Patient Records
+              </GhostButton>
             </Box>
             <Box sx={{ display: "flex", alignItems: "center" }}>
-              <Link
-                href="https://support.wrappixel.com/"
-                style={{ display: "flex", height: "fit-content" }}
-                target="_blank"
-              >
-                <GhostButton sx={{ gap: "8px", padding: "0", fontSize: "16px", ":hover": { color: "#714bff", backgroundColor: "transparent" } }}>
-                  <Icon icon="solar:question-circle-linear" width={20} />
-
-                  Help
-                </GhostButton>
-              </Link>
-
+              <GhostButton sx={{ gap: "8px", padding: "0", fontSize: "16px", ":hover": { color: "#2E5BBA", backgroundColor: "transparent" } }}>
+                <Icon icon="mdi:heart-pulse" width={20} />
+                Vital Signs
+              </GhostButton>
             </Box>
             <Box sx={{ display: "flex", alignItems: "center" }}>
-              <Link
-                href="https://www.wrappixel.com/hire-us/"
-                style={{ display: "flex", height: "fit-content" }}
-                target="_blank"
-              >
-                <GhostButton sx={{ gap: "8px", padding: "0", fontSize: "16px", ":hover": { color: "#714bff", backgroundColor: "transparent" } }}>
-                  <Icon icon="solar:case-round-linear" width={20} />
-
-                  Hire Us
-                </GhostButton>
-              </Link>
-
+              <GhostButton sx={{ gap: "8px", padding: "0", fontSize: "16px", ":hover": { color: "#2E5BBA", backgroundColor: "transparent" } }}>
+                <Icon icon="mdi:pill" width={20} />
+                Medications
+              </GhostButton>
             </Box>
           </Stack>
         </Stack>
@@ -107,13 +82,32 @@ const Topbar = () => {
             flexDirection: { md: "row", xs: "column" }, gap: "16px", display: { md: "flex" }
           }}
         >
-          <Typography
-            variant="h6"
-            sx={{ textTransform: "uppercase", fontSize: "14px", background: "linear-gradient(90deg,#fff 0,#8d70f8 100%)", backgroundClip: "text", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", color: (theme) => theme.palette.primary.contrastText }}
-          >
-            Checkout Pro Version
-          </Typography>
-          {/* <DropdownMenu/> */}
+          <Stack direction="row" spacing={2} alignItems="center">
+            <Chip 
+              label="BP: 120/80" 
+              sx={{ 
+                backgroundColor: "rgba(255,255,255,0.2)", 
+                color: "white",
+                fontWeight: "bold"
+              }} 
+            />
+            <Chip 
+              label="HR: 72 bpm" 
+              sx={{ 
+                backgroundColor: "rgba(255,255,255,0.2)", 
+                color: "white",
+                fontWeight: "bold"
+              }} 
+            />
+            <Chip 
+              label="SpO₂: 98%" 
+              sx={{ 
+                backgroundColor: "rgba(255,255,255,0.2)", 
+                color: "white",
+                fontWeight: "bold"
+              }} 
+            />
+          </Stack>
 
           <Stack
             direction="row"
@@ -122,27 +116,15 @@ const Topbar = () => {
               flexDirection: { md: "row", xs: "column" }, gap: "10px", display: { md: "flex" }
             }}
           >
-            <Stack
-              direction="row"
-              sx={{
-                alignItems: "center",
-                gap: "10px",
-              }}
-            >
-              <LivePreviewDropdown />
-
-              <Button sx={{ gap: "8px", borderRadius: "7px", backgroundColor: "#8d70f8", fontSize: "16px", ":hover": { backgroundColor: "#714bff" } }} variant="contained" href="https://www.wrappixel.com/templates/spike-nextjs-admin-template/?ref=376" target="_blank">
-                <Icon icon="solar:crown-linear" width={18} />
-                Get Pro
-              </Button>
-            </Stack>
-
-            <Button sx={{ gap: "8px", borderRadius: "7px", color: "#000000", backgroundColor: "#b3f143", fontSize: "16px", ":hover": { backgroundColor: "#90de03" } }} variant="contained" href="https://www.wrappixel.com/all-access-pass/?ref=376" target="_blank">
-              <Icon icon="solar:bolt-linear" width={18} />
-              All Access Pass
+            <Button sx={{ gap: "8px", borderRadius: "7px", backgroundColor: "rgba(255,255,255,0.2)", fontSize: "16px", color: "white", ":hover": { backgroundColor: "rgba(255,255,255,0.3)" } }} variant="contained">
+              <Icon icon="mdi:bell" width={18} />
+              Alerts
+            </Button>
+            <Button sx={{ gap: "8px", borderRadius: "7px", backgroundColor: "rgba(255,255,255,0.2)", fontSize: "16px", color: "white", ":hover": { backgroundColor: "rgba(255,255,255,0.3)" } }} variant="contained">
+              <Icon icon="mdi:account-multiple" width={18} />
+              Patients
             </Button>
           </Stack>
-
         </Stack>
       </ToolbarStyled>
     </AppBarStyled>

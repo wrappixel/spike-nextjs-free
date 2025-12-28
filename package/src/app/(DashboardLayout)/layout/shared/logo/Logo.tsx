@@ -1,6 +1,5 @@
 import Link from "next/link";
-import { styled } from "@mui/material";
-import Image from "next/image";
+import { styled, Typography } from "@mui/material";
 
 const LinkStyled = styled(Link)(() => ({
   height: "70px",
@@ -12,7 +11,9 @@ const LinkStyled = styled(Link)(() => ({
 const Logo = () => {
   return (
     <LinkStyled href="/">
-      <Image src="/images/logos/logo-dark.svg" alt="logo" height={70} width={174} priority />
+      <Typography component="span" sx={{ lineHeight: "70px", fontSize: "22px", fontWeight: 700 }}>
+        health dashboard
+      </Typography>
     </LinkStyled>
   );
 };

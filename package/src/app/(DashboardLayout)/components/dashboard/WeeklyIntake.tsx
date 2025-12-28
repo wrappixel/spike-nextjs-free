@@ -12,7 +12,7 @@ const options = [
   "Something else here",
 ];
 
-const ProfitExpenses = () => {
+const WeeklyIntake = () => {
   // menu
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
   const open = Boolean(anchorEl);
@@ -59,7 +59,7 @@ const ProfitExpenses = () => {
       enabled: false,
     },
     legend: {
-      show: false,
+      show: true,
     },
     grid: {
       borderColor: "rgba(0,0,0,0.1)",
@@ -72,9 +72,15 @@ const ProfitExpenses = () => {
     },
     yaxis: {
       tickAmount: 4,
+      title: { text: "Minutes" },
     },
     xaxis: {
-      categories: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+      categories: [
+        "Running",
+        "Cycling", 
+        "Swimming",
+        "Gym",
+      ],
       axisBorder: {
         show: false,
       },
@@ -86,18 +92,18 @@ const ProfitExpenses = () => {
   };
   const seriescolumnchart: any = [
     {
-      name: "Pixel ",
-      data: [9, 5, 3, 7, 5, 10, 3],
+      name: "Today",
+      data: [45, 60, 30, 75],
     },
     {
-      name: "Ample ",
-      data: [6, 3, 9, 5, 4, 6, 4],
+      name: "Yesterday",
+      data: [40, 55, 25, 70],
     },
   ];
 
   return (
     <DashboardCard
-      title="Profit & Expenses"
+      title="Weekly Exercise Activity"
       action={
         <>
           <IconButton
@@ -147,4 +153,4 @@ const ProfitExpenses = () => {
   );
 };
 
-export default ProfitExpenses;
+export default WeeklyIntake;

@@ -14,60 +14,59 @@ const baselightTheme = createTheme({
     direction: "ltr",
     palette: {
         primary: {
-            main: "#0085db",
-            light: "#e5f3fb",
-            dark: "#0085db",
+            main: "#2E5BBA", // 专业医疗蓝
+            light: "#E8F2FF",
+            dark: "#1E3A8A",
         },
         secondary: {
-            main: "#707a82",
-            light: "#e7ecf0",
-            dark: "#707a82",
+            main: "#64748B", // 中性灰
+            light: "#F1F5F9",
+            dark: "#475569",
         },
         success: {
-            main: "#4bd08b",
-            light: "#dffff3",
-            dark: "#4bd08b",
+            main: "#10B981", // 医疗绿色
+            light: "#D1FAE5",
+            dark: "#059669",
             contrastText: "#ffffff",
         },
         info: {
-            main: "#46caeb",
-            light: "#e1f5fa",
-            dark: "#46caeb",
+            main: "#3B82F6", // 信息蓝
+            light: "#DBEAFE",
+            dark: "#1D4ED8",
             contrastText: "#ffffff",
         },
         error: {
-            main: "#fb977d",
-            light: "#ffede9",
-            dark: "#fb977d",
+            main: "#EF4444", // 医疗红色
+            light: "#FEE2E2",
+            dark: "#DC2626",
             contrastText: "#ffffff",
         },
         warning: {
-            main: "#f8c076",
-            light: "#fff6ea",
-            dark: "#f8c076",
+            main: "#F59E0B", // 警告橙
+            light: "#FEF3C7",
+            dark: "#D97706",
             contrastText: "#ffffff",
         },
         grey: {
-            100: "#F2F6FA",
-            200: "#f0f5f9",
-            300: "#DFE5EF",
-            400: "#7C8FAC",
-            500: "#5A6A85",
-            600: "#111c2d",
+            100: "#F8FAFC",
+            200: "#F1F5F9",
+            300: "#E2E8F0",
+            400: "#94A3B8",
+            500: "#64748B",
+            600: "#475569",
         },
         text: {
-            primary: "#111c2d",
-            secondary: "#707a82",
-
+            primary: "#1E293B",
+            secondary: "#64748B",
         },
         action: {
-            disabledBackground: "rgba(73,82,88,0.12)",
-            hoverOpacity: 0.02,
-            hover: "#f6f9fc",
+            disabledBackground: "rgba(100,116,139,0.12)",
+            hoverOpacity: 0.04,
+            hover: "#F8FAFC",
         },
-        divider: "#e5eaef",
+        divider: "#E2E8F0",
         background: {
-            default: "#F0F5F9",
+            default: "#F8FAFC",
             paper: "#ffffff",
         },
     },
@@ -162,7 +161,8 @@ const baselightTheme = createTheme({
         MuiCard: {
             styleOverrides: {
                 root: {
-                    borderRadius: "18px",
+                    borderRadius: "8px",
+                    boxShadow: "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
                 },
             },
         },

@@ -6,7 +6,7 @@ import { IconArrowUpLeft } from '@tabler/icons-react'
 
 import DashboardCard from '@/app/(DashboardLayout)/components/shared/DashboardCard'
 
-const TrafficDistribution = () => {
+const ActivityIndex = () => {
   // chart color
   const theme = useTheme()
   const primary = theme.palette.primary.main
@@ -60,10 +60,11 @@ const TrafficDistribution = () => {
       },
     ],
   }
-  const seriescolumnchart: any = [5368, 3500, 4106]
+  // Calorie Burn Distribution: Cardio, Strength, Flexibility
+  const seriescolumnchart: any = [45, 35, 20]
 
   return (
-    <DashboardCard title='Traffic Distribution'>
+    <DashboardCard title='Daily Calorie Burn'>
       <Grid container spacing={3}>
         {/* column */}
         <Grid
@@ -76,7 +77,7 @@ const TrafficDistribution = () => {
             sx={{
               fontWeight: '700',
             }}>
-            $36,358
+            2,450 kcal
           </Typography>
           <Stack
             direction={{ xs: 'column', sm: 'row' }}
@@ -94,11 +95,11 @@ const TrafficDistribution = () => {
                 sx={{
                   fontWeight: '600',
                 }}>
-                +9%
+                +12%
               </Typography>
             </Stack>
             <Typography variant='subtitle2' color='textSecondary'>
-              last year
+              vs yesterday
             </Typography>
           </Stack>
           <Stack
@@ -126,7 +127,7 @@ const TrafficDistribution = () => {
                 sx={{
                   fontSize: '12px',
                 }}>
-                Oragnic
+                Cardio
               </Typography>
             </Stack>
             <Stack
@@ -148,7 +149,7 @@ const TrafficDistribution = () => {
                 sx={{
                   fontSize: '12px',
                 }}>
-                Refferal
+                Strength
               </Typography>
             </Stack>
           </Stack>
@@ -172,4 +173,4 @@ const TrafficDistribution = () => {
   )
 }
 
-export default TrafficDistribution
+export default ActivityIndex

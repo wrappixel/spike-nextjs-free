@@ -3,10 +3,10 @@ import dynamic from "next/dynamic";
 const Chart = dynamic(() => import("react-apexcharts"), { ssr: false });
 import { useTheme } from '@mui/material/styles';
 import { Stack, Typography, Avatar, Fab } from '@mui/material';
-import { IconArrowDownRight, IconCurrencyDollar } from '@tabler/icons-react';
+import { IconArrowDownRight, IconBed } from '@tabler/icons-react';
 import DashboardCard from '@/app/(DashboardLayout)/components/shared/DashboardCard';
 
-const ProductSales = () => {
+const SleepQuality = () => {
   // chart color
   const theme = useTheme();
   const primary = theme.palette.primary.main;
@@ -44,20 +44,21 @@ const ProductSales = () => {
       theme: theme.palette.mode === 'dark' ? 'dark' : 'light',
     },
   };
+  // Sleep quality score over last 7 days (0-100)
   const seriescolumnchart: any = [
     {
-      name: '',
+      name: 'Sleep Quality',
       color: primary,
-      data: [25, 66, 20, 40, 12, 58, 20],
+      data: [85, 78, 92, 88, 75, 90, 87],
     },
   ];
 
   return (
     (<DashboardCard
-      title="Product Sales"
+      title="Sleep Quality Score"
       action={
-        <Fab color="error" size="medium" sx={{color: '#ffffff', boxShadow: 'none'}}>
-          <IconCurrencyDollar width={24} />
+        <Fab color="primary" size="medium" sx={{color: '#ffffff', boxShadow: 'none'}}>
+          <IconBed width={24} />
         </Fab>
       }
       footer={
@@ -71,7 +72,7 @@ const ProductSales = () => {
             fontWeight: "700",
             mt: "-20px"
           }}>
-          $6,820
+          85/100
         </Typography>
         <Stack
           direction="row"
@@ -86,10 +87,10 @@ const ProductSales = () => {
           <Typography variant="subtitle2" sx={{
             fontWeight: "600"
           }}>
-            +9%
+            +7%
           </Typography>
           <Typography variant="subtitle2" color="textSecondary">
-            last year
+            vs last week
           </Typography>
         </Stack>
       </>
@@ -97,4 +98,4 @@ const ProductSales = () => {
   );
 };
 
-export default ProductSales;
+export default SleepQuality;
