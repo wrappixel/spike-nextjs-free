@@ -39,9 +39,11 @@ const DashboardCard = ({
             <Stack
               direction="row"
               spacing={2}
-              justifyContent="space-between"
-              alignItems={"center"}
-              mb={3}
+              sx={{
+                justifyContent: "space-between",
+                alignItems: "center",
+                mb: 3
+              }}
             >
               <Box>
                 {title ? <Typography variant="h5">{title}</Typography> : ""}

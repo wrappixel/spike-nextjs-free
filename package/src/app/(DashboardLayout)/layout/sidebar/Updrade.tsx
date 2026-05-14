@@ -7,11 +7,11 @@ import { Box, Button, Typography } from "@mui/material";
 
 
 export const Upgrade = () => (
-  <Box pb={0} mt={5}>
+  <Box sx={{ pb: 0, mt: 5 }}>
     <Box
-      pl={2}
-      pr={2}
       sx={{
+        pl: 2,
+        pr: 2,
         backgroundColor: (theme) => theme.palette.secondary.light,
         borderRadius: "10px",
         position: "relative",
@@ -29,8 +29,8 @@ export const Upgrade = () => (
         />
       </Box>
 
-      <Box pb={3} pt={3}>
-        <Typography variant="h5" fontWeight="600" mb={2}>
+      <Box sx={{ pb: 3, pt: 3 }}>
+        <Typography variant="h5" sx={{ fontWeight: "600", mb: 2 }}>
           Check Pro <br /> Version
         </Typography>
         <Button

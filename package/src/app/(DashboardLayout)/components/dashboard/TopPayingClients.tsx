@@ -56,7 +56,7 @@ const TopPayingClients = () => {
   return (
     (<DashboardCard title="Top Paying Clients">
       <Box sx={{ overflow: "auto" }}>
-        <Box mt={2} sx={{ width: "100%", display: "table", tableLayout: "fixed" }}>
+        <Box sx={{ mt: 2, width: "100%", display: "table", tableLayout: "fixed" }}>
           <Table
             sx={{
               whiteSpace: "nowrap",

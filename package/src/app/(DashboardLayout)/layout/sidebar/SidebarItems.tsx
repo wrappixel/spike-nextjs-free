@@ -1,34 +1,21 @@
-import React from "react";
 import { usePathname } from "next/navigation";
 import { Box, Typography } from "@mui/material";
-import {
-    Logo,
-    Sidebar as MUI_Sidebar,
-    Menu,
-    MenuItem,
-    Submenu,
-} from "react-mui-sidebar";
-
+import { Logo, Sidebar as MUI_Sidebar, Menu, MenuItem, Submenu } from "react-mui-sidebar";
 import Menuitems from "./MenuItems";
 import { Icon } from "@iconify/react";
 import Link from "next/link";
 import { Upgrade } from "./Updrade";
-import theme from "@/utils/theme";
 
 const renderMenuItems = (items: any[], pathDirect: string) => {
-
-
 
     return items.map((item) => {
         if (item.subheader) {
             // Display Subheader
             return (
                 <Box sx={{ margin: "0 -24px" }} key={item.subheader}>
-                    <Menu
-                        subHeading={item.subheader}
-                        key={item.subheader}
-
-                    ><></></Menu>
+                    <Menu subHeading={item.subheader} key={item.subheader}>
+                        <></>
+                    </Menu>
                 </Box>
             );
         }
@@ -60,28 +47,57 @@ const renderMenuItems = (items: any[], pathDirect: string) => {
                 isSelected={pathDirect === item?.href}
                 icon={
                     item.icon ? (
-                        <Icon icon={"solar:" + item.icon} width="24" height="24" />
+                        <Icon 
+                            icon={"solar:" + item.icon} 
+                            width="24" 
+                            height="24" 
+                            style={{ color: pathDirect === item?.href ? '#fff' : 'inherit' }} 
+                        />
                     ) : (
-                        <Icon icon="mdi:circle" width="6" height="6" />
+                        <Icon 
+                            icon="mdi:circle" 
+                            width="6" 
+                            height="6" 
+                            style={{ color: pathDirect === item?.href ? '#fff' : 'inherit' }} 
+                        />
                     )
                 }
                 component="div"
                 link={item.href && item.href !== "" ? item.href : undefined}
-
                 badge={item.chip ? true : false}
-                badgeContent={item.chip || ""}
-                badgeColor='secondary'
-                badgeTextColor="#0085db"
+                badgeContent={
+                    (item.chip ? (
+                        <Box
+                            sx={{
+                                bgcolor: item.chipColor
+                                    ? `${item.chipColor}.light`
+                                    : "primary.light",
+                                color: item.chipColor
+                                    ? `${item.chipColor}.main`
+                                    : "primary.main",
+                                fontSize: "13px",
+                                borderRadius: "10px",
+                                lineHeight: "12px",
+                            }}
+                        >
+                            {item.chip}
+                        </Box>
+                    ) : (
+                        ""
+                    )) as any
+                }
                 disabled={item.disabled}
             >
-
-                <Link href={item.href} target={item.href && item.href.startsWith("https") ? "_blank" : "_self"}>
-                    <Typography color={pathDirect === item?.href ? '#fff' : 'inherit'}>
-                        {item.title}</Typography>
+                <Link 
+                    href={item.href} 
+                    target={item.href && item.href.startsWith("https") ? "_blank" : "_self"}
+                    style={{ color: 'inherit' }}
+                >
+                    <Typography sx={{ color: pathDirect === item?.href ? '#fff' : 'inherit' }}>
+                        {item.title}
+                    </Typography>
                 </Link>
             </MenuItem>
-
-
         );
     });
 };

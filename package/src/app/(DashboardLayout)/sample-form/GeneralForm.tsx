@@ -275,7 +275,7 @@ export default function GeneralForm() {
             <Stack
               direction={{ xs: 'column', sm: 'row' }}
               spacing={2}
-              justifyContent='space-between'>
+              sx={{ justifyContent: 'space-between' }}>
               <Stack spacing={1} direction='row'>
                 <Button variant='contained' color='primary'>
                   Submit

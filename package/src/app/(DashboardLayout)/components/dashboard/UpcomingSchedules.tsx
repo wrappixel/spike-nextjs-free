@@ -17,9 +17,6 @@ const UpcomingSchedules = () => {
       <>
         <Timeline
           className="theme-timeline"
-          nonce={undefined}
-          onResize={undefined}
-          onResizeCapture={undefined}
           sx={{
             p: 0,
             mb: { lg: "-40px" },

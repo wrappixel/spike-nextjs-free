@@ -6,36 +6,42 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "eslint ."
   },
   "dependencies": {
     "@emotion/cache": "^11.14.0",
     "@emotion/react": "^11.14.0",
     "@emotion/server": "11.11.0",
-    "@emotion/styled": "^11.14.0",
-    "@iconify/react": "^5.0.2",
-    "@mui/icons-material": "7.0.1",
-    "@mui/lab": "^7.0.0-beta.12",
-    "@mui/material": "^7.0.1",
-    "@tabler/icons-react": "^3.30.0",
-    "@types/node": "22.7.4",
-    "@types/react": "18.3.10",
-    "@types/react-dom": "18.3.0",
-    "apexcharts": "4.5.0",
-    "eslint": "9.21.0",
-    "eslint-config-next": "15.2.0",
-    "lodash": "4.17.21",
-    "next": "^15.1.6",
-    "react": "^19.0.0",
-    "react-apexcharts": "^1.7.0",
-    "react-dom": "^19.0.0",
-    "react-mui-sidebar": "^1.6.3",
-    "react-syntax-highlighter": "^15.6.1",
-    "simplebar-react": "^3.3.0",
-    "typescript": "5.7.3"
+    "@emotion/styled": "^11.14.1",
+    "@iconify/react": "^5.2.1",
+    "@mui/icons-material": "^9.0.1",
+    "@mui/lab": "^9.0.0-beta.3",
+    "@mui/material": "^9.0.1",
+    "@tabler/icons-react": "^3.44.0",
+    "apexcharts": "^5.11.0",
+    "lodash": "^4.18.1",
+    "next": "^16.2.6",
+    "react": "^19.2.6",
+    "react-apexcharts": "^2.1.0",
+    "react-dom": "^19.2.6",
+    "react-mui-sidebar": "^1.6.10",
+    "react-syntax-highlighter": "^16.1.1",
+    "simplebar-react": "^3.3.2"
   },
   "devDependencies": {
+    "@eslint/eslintrc": "^3.3.5",
+    "@eslint/js": "^10.0.1",
     "@types/lodash": "4.17.9",
-    "@types/react-syntax-highlighter": "^15.5.13"
+    "@types/node": "^25.7.0",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@types/react-syntax-highlighter": "^15.5.13",
+    "eslint": "^10.3.0",
+    "eslint-config-next": "^16.2.6",
+    "globals": "^17.6.0",
+    "typescript": "^6.0.3"
+  },
+  "overrides": {
+    "postcss": "^8.5.10"
   }
 }

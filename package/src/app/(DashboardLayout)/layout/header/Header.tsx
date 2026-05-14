@@ -76,9 +76,9 @@ const Header = () => {
           <Notification />
 
 
-          <Box flexGrow={1} />
+          <Box sx={{ flexGrow: 1 }} />
           <>
-            <Stack spacing={2} direction="row" alignItems="center">
+            <Stack spacing={2} direction="row" sx={{ alignItems: "center" }}>
               <Button variant="contained" color="primary" target="_blank" href="https://www.wrappixel.com/templates/spike-nextjs-admin-template/?ref=376#demos">
                 Check Pro Template
               </Button>

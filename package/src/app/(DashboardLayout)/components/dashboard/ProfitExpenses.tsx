@@ -35,7 +35,7 @@ const ProfitExpenses = () => {
       fontFamily: "'Plus Jakarta Sans', sans-serif;",
       foreColor: "#adb0bb",
       toolbar: {
-        show: true,
+        show: false,
       },
       height: 350,
     },
