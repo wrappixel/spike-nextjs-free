@@ -1,5 +1,5 @@
 <p align="center">
-   <a href="https://www.wrappixel.com/" target="_blank">
+   <a href="https://wrappixel.com/" target="_blank">
       <img src="https://adminmart.github.io/template_api/images/brand-logo/WrapPixel-Logo.svg" alt="spike-image" width="100px" height="100px">
    </a>
 </p>
@@ -7,7 +7,7 @@
 
 
 <h1 align="center">
-   <a href="https://www.wrappixel.com/templates/spike-next-js-free-admin-template/?ref=376" target="_blank" align="center">
+   <a href="https://wrappixel.com/templates/spike-next-js-free-admin-template/?ref=376" target="_blank" align="center">
        Spike Next Js Free Admin Template
    </a>
 </h1>
@@ -15,7 +15,7 @@
 <p align="center">Download most useful and comprehensive 🚀 Free NextJs admin template built for developers 🛠</p>
 
 
-[![Spike Next Js Free Admin Template Demo Screenshot](https://www.wrappixel.com/wp-content/uploads/edd/2025/03/Spike-Nextjs-Free.jpg)](https://www.wrappixel.com/templates/spike-next-js-free-admin-template/?ref=376)
+[![Spike Next Js Free Admin Template Demo Screenshot](https://images.wrappixel.com/templates/free/spike/Spike-Nextjs-Free.webp)](https://www.wrappixel.com/templates/spike-next-js-free-admin-template/?ref=376)
 
 
 ## 👋 Introduction
@@ -124,7 +124,7 @@ The Pro Version of the **Spike NextJs Admin Template** comes packed with essenti
   </a>
 </div>
 
-[![Modernize Free Bootstrap 5 Admin Template Demo Screenshot](https://www.wrappixel.com/wp-content/uploads/edd/2025/02/Spike_Paid_version_794X456.jpg)](https://www.wrappixel.com/templates/spike-nextjs-admin-template/?ref=376)
+[![Modernize Free Bootstrap 5 Admin Template Demo Screenshot](https://images.wrappixel.com/templates/pro/spike/Spike_Paid_version_nextjs.webp)](https://wrappixel.com/templates/spike-nextjs-admin-template/?ref=376)
 
 
 
@@ -178,18 +178,18 @@ The **Free Version** of the **Spike NextJs Admin Template** provides a solid set
    <tbody>
       <tr>   
          <td>
-            <a href="https://www.wrappixel.com/all-access-pass/?ref=376" width="150px">
-               <img src="https://www.wrappixel.com/wp-content/uploads/2025/04/all-access-pass-category-banner-1.png" alt="all-access-pass-category-admin-template" style="max-width:140px;">
+            <a href="https://wrappixel.com/all-access-pass/?ref=376" width="150px">
+               <img src="https://images.wrappixel.com/all-access/all-access-pass.webp" alt="all-access-pass-category-admin-template" style="max-width:140px;">
             </a>
          </td>
          <td>
-            <a href="https://www.wrappixel.com/templates/spike-tailwind-admin-template/?ref=376" width="150px">
-               <img src="https://www.wrappixel.com/wp-content/uploads/edd/2024/05/spike-tailwind-css-admin-wpn.jpg" alt="spike-tailwind-admin-template" style="max-width:140px;">
+            <a href="https://wrappixel.com/templates/spike-tailwind-admin-template/?ref=376" width="150px">
+               <img src="https://images.wrappixel.com/templates/free/spike/spike-tailwind-css-admin-wpn.webp" alt="spike-tailwind-admin-template" style="max-width:140px;">
             </a>
          </td>
          <td>
-            <a href="https://www.wrappixel.com/templates/spike-bootstrap-admin-dashboard/?ref=376" width="150px">
-               <img src="https://www.wrappixel.com/wp-content/uploads/edd/2024/05/spike-bootstrap-wpn.jpg" alt="spike-bootstrap-admin-template" style="max-width:140px;">
+            <a href="https://wrappixel.com/templates/spike-bootstrap-admin-dashboard/?ref=376" width="150px">
+               <img src="https://images.wrappixel.com/templates/pro/spike/spike-bootstrap-wpn.webp" alt="spike-bootstrap-admin-template" style="max-width:140px;">
             </a>
          </td>
       </tr>
@@ -213,18 +213,18 @@ The **Free Version** of the **Spike NextJs Admin Template** provides a solid set
    <tbody>
       <tr>
          <td>
-            <a href="https://www.wrappixel.com/templates/spike-angular-admin-template/?ref=376" width="150px">
-               <img src="https://www.wrappixel.com/wp-content/uploads/edd/2024/05/spike-angular-admin-wpn.jpg" alt="spike-angular-admin-template" style="max-width:140px;">
+            <a href="https://wrappixel.com/templates/spike-angular-admin-template/?ref=376" width="150px">
+               <img src="https://images.wrappixel.com/templates/pro/spike/spike-angular-admin-wpn.webp" alt="spike-angular-admin-template" style="max-width:140px;">
             </a>
          </td>
          <td>
-            <a href="https://www.wrappixel.com/templates/spike-vuejs-admin-dashboard/?ref=376" width="150px">
-               <img src="https://www.wrappixel.com/wp-content/uploads/edd/2024/05/spike-vuejs-vuetify-admin-wpn.jpg" alt="spike-vue-admin-template" style="max-width:150px;">
+            <a href="https://wrappixel.com/templates/spike-vuejs-admin-dashboard/?ref=376" width="150px">
+               <img src="https://images.wrappixel.com/templates/pro/spike/spike-vuejs-vuetify-admin-wpn.webp" alt="spike-vue-admin-template" style="max-width:150px;">
             </a>
          </td> 
          <td>
-            <a href="https://www.wrappixel.com/templates/spike-nuxtjs-admin-template/?ref=376" width="150px">
-               <img src="https://www.wrappixel.com/wp-content/uploads/edd/2024/05/spike-nuxtjs-admin-wpn.jpg" alt="spike-nuxt-admin-template" style="max-width:150px;">
+            <a href="https://wrappixel.com/templates/spike-nuxtjs-admin-template/?ref=376" width="150px">
+               <img src="https://images.wrappixel.com/templates/pro/spike/spike-nuxtjs-admin.webp" alt="spike-nuxt-admin-template" style="max-width:150px;">
             </a>
          </td>
       </tr>
