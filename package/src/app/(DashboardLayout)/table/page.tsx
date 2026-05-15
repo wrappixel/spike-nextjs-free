@@ -1,4 +1,3 @@
-import React from 'react'
 import TopPayingClients from '@/app/(DashboardLayout)/components/dashboard/TopPayingClients'
 
 function TableExample() {

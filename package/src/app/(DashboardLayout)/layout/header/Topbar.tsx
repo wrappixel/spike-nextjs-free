@@ -1,6 +1,4 @@
 import { Box, AppBar, Toolbar, styled, Stack, Button } from "@mui/material";
-
-import { IconLifebuoy, IconGift, IconBriefcase } from "@tabler/icons-react";
 import { Typography } from "@mui/material";
 import Link from "next/link";
 import { Icon } from "@iconify/react";
@@ -47,7 +45,7 @@ const Topbar = () => {
             display: { xs: "none", md: "flex" }
           }}
         >
-          <Link href="https://www.wrappixel.com/" style={{ display: "flex" }}>
+          <Link href="https://wrappixel.com/" style={{ display: "flex" }}>
             <img src="/images/logos/logo-wrappixel.svg" width={147} alt="logo" />
           </Link>
           <Stack
@@ -57,7 +55,7 @@ const Topbar = () => {
           >
             <Box sx={{ display: "flex", alignItems: "center" }}>
               <Link
-                href="https://www.wrappixel.com/templates/category/nextjs-templates/" 
+                href="https://wrappixel.com/templates/category/nextjs-templates/"
                 style={{ display: "flex", height: "fit-content" }}
                 target="_blank"
               >
@@ -85,7 +83,7 @@ const Topbar = () => {
             </Box>
             <Box sx={{ display: "flex", alignItems: "center" }}>
               <Link
-                href="https://www.wrappixel.com/hire-us/"
+                href="https://wrappixel.com/hire-us/"
                 style={{ display: "flex", height: "fit-content" }}
                 target="_blank"
               >
@@ -99,7 +97,7 @@ const Topbar = () => {
             </Box>
           </Stack>
         </Stack>
-        
+
         <Stack
           direction="row"
           sx={{
@@ -131,13 +129,13 @@ const Topbar = () => {
             >
               <LivePreviewDropdown />
 
-              <Button sx={{ gap: "8px", borderRadius: "7px", backgroundColor: "#8d70f8", fontSize: "16px", ":hover": { backgroundColor: "#714bff" } }} variant="contained" href="https://www.wrappixel.com/templates/spike-nextjs-admin-template/?ref=376" target="_blank">
+              <Button sx={{ gap: "8px", borderRadius: "7px", backgroundColor: "#8d70f8", fontSize: "16px", ":hover": { backgroundColor: "#714bff" } }} variant="contained" href="https://wrappixel.com/templates/spike-nextjs-admin-template/?ref=376" target="_blank">
                 <Icon icon="solar:crown-linear" width={18} />
                 Get Pro
               </Button>
             </Stack>
 
-            <Button sx={{ gap: "8px", borderRadius: "7px", color: "#000000", backgroundColor: "#b3f143", fontSize: "16px", ":hover": { backgroundColor: "#90de03" } }} variant="contained" href="https://www.wrappixel.com/all-access-pass/?ref=376" target="_blank">
+            <Button sx={{ gap: "8px", borderRadius: "7px", color: "#000000", backgroundColor: "#b3f143", fontSize: "16px", ":hover": { backgroundColor: "#90de03" } }} variant="contained" href="https://wrappixel.com/all-access-pass/?ref=376" target="_blank">
               <Icon icon="solar:bolt-linear" width={18} />
               All Access Pass
             </Button>

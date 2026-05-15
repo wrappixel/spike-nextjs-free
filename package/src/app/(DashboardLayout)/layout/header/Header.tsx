@@ -1,18 +1,12 @@
-import { IconButton, Box, AppBar, Menu, MenuItem, Typography, useMediaQuery, Toolbar, styled, Stack, Button, Badge } from '@mui/material';
+import { IconButton, Box, AppBar, Toolbar, styled, Stack, Button} from '@mui/material';
 import Profile from './Profile';
 import { useEffect, useState, useContext } from 'react';
 import { Icon } from '@iconify/react';
 import { DashboardContext } from '@/app/context/DashboardContext';
-import { IconBellRinging } from "@tabler/icons-react";
 import Notification from './Notification'
 
 const Header = () => {
   const [_height, setHeight] = useState('0px');
-
-
-
-
-
 
   const AppBarStyled = styled(AppBar)(({ theme }) => ({
     boxShadow: 'none',
@@ -79,7 +73,7 @@ const Header = () => {
           <Box sx={{ flexGrow: 1 }} />
           <>
             <Stack spacing={2} direction="row" sx={{ alignItems: "center" }}>
-              <Button variant="contained" color="primary" target="_blank" href="https://www.wrappixel.com/templates/spike-nextjs-admin-template/?ref=376#demos">
+              <Button variant="contained" color="primary" target="_blank" href="https://wrappixel.com/templates/spike-nextjs-admin-template/?ref=376#demos">
                 Check Pro Template
               </Button>
               <Profile />

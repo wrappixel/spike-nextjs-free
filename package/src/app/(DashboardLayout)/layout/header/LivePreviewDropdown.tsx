@@ -3,18 +3,8 @@ import { styled, alpha } from '@mui/material/styles';
 import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
-import { Icon } from "@iconify/react";
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import Link from "next/link";
-import { colors } from '@mui/material';
-// import { IconExternalLink } from '@tabler/icons-react';
-
-import img1 from '/public/images/svgs/next-cat-icon.svg';
-import img2 from '/public/images/svgs/next-cat-icon.svg';
-import img3 from '/public/images/svgs/next-cat-icon.svg';
-import img4 from '/public/images/svgs/next-cat-icon.svg';
-import img5 from '/public/images/svgs/next-cat-icon.svg';
-import img6 from '/public/images/svgs/next-cat-icon.svg';
 
 interface MenuItemType {
     id: number;
@@ -94,12 +84,12 @@ const StyledButton = styled(Button)(({ theme }) => ({
 }));
 
 const MenuItems: MenuItemType[] = [   
-    { id: 1, img: '/images/svgs/next-cat-icon.svg', title: 'NextJs Version', href: 'https://www.wrappixel.com/templates/spike-nextjs-admin-template/?ref=376#demos' },
-    { id: 2, img: '/images/svgs/angular-cat-icon.svg', title: 'Angular Version', href: 'https://www.wrappixel.com/templates/spike-angular-admin-template/?ref=376#demos' },
-    { id: 3, img: '/images/svgs/vue-cat-icon.svg', title: 'VueJs Version', href: 'https://www.wrappixel.com/templates/spike-bootstrap-admin-dashboard/?ref=376#demos' },
-    { id: 4, img: '/images/svgs/nuxt-cat-icon.svg', title: 'NuxtJs Version', href: ' https://www.wrappixel.com/templates/spike-nuxtjs-admin-template/?ref=376#demos' },
-    { id: 5, img: '/images/svgs/tailwindcss.svg', title: 'Tailwind Version', href: ' https://www.wrappixel.com/templates/spike-tailwind-admin-template/?ref=376#demos' },
-    { id: 6, img: '/images/svgs/bt-cat-icon.svg', title: 'Bootstrap Version', href: 'https://www.wrappixel.com/templates/spike-bootstrap-admin-dashboard/?ref=376#demos' },
+    { id: 1, img: '/images/svgs/next-cat-icon.svg', title: 'NextJs Version', href: 'https://wrappixel.com/templates/spike-nextjs-admin-template/?ref=376#demos' },
+    { id: 2, img: '/images/svgs/angular-cat-icon.svg', title: 'Angular Version', href: 'https://wrappixel.com/templates/spike-angular-admin-template/?ref=376#demos' },
+    { id: 3, img: '/images/svgs/vue-cat-icon.svg', title: 'VueJs Version', href: 'https://wrappixel.com/templates/spike-bootstrap-admin-dashboard/?ref=376#demos' },
+    { id: 4, img: '/images/svgs/nuxt-cat-icon.svg', title: 'NuxtJs Version', href: ' https://wrappixel.com/templates/spike-nuxtjs-admin-template/?ref=376#demos' },
+    { id: 5, img: '/images/svgs/tailwindcss.svg', title: 'Tailwind Version', href: ' https://wrappixel.com/templates/spike-tailwind-admin-template/?ref=376#demos' },
+    { id: 6, img: '/images/svgs/bt-cat-icon.svg', title: 'Bootstrap Version', href: 'https://wrappixel.com/templates/spike-bootstrap-admin-dashboard/?ref=376#demos' },
 
 ];
 

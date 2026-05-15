@@ -1,5 +1,4 @@
 'use client';
-import React from "react";
 import { Box, Typography } from "@mui/material";
 import Link from "next/link";
 const Footer = () => {
@@ -10,7 +9,7 @@ const Footer = () => {
 
                 Design and Developed by{" "}
                 <Typography component="span" sx={{ 'a': { color: "primary.main" } }}>
-                    <Link href="https://www.wrappixel.com" target="blank" style={{ textDecoration: "underline", fontSize: "1rem" }}>
+                    <Link href="https://wrappixel.com" target="blank" style={{ textDecoration: "underline", fontSize: "1rem" }}>
                         Wrappixel.com
                     </Link> </Typography>{" "}
 

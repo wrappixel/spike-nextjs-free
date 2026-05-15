@@ -1,7 +1,4 @@
-
-
 'use client';
-import React from "react";
 import Image from "next/image";
 import { Box, Button, Typography } from "@mui/material";
 
@@ -35,8 +32,7 @@ export const Upgrade = () => (
         </Typography>
         <Button
           color="secondary"
-          href="https://www.wrappixel.com/templates/spike-nextjs-admin-template/?ref=376#demos"
-
+          href="https://wrappixel.com/templates/spike-nextjs-admin-template/?ref=376#demos"
           target="_blank"
           disableElevation
           variant="contained"
@@ -47,4 +43,3 @@ export const Upgrade = () => (
     </Box>
   </Box>
 );
-
